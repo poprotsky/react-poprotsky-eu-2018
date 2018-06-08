@@ -6,7 +6,7 @@ export default class Social extends Component {
     const socialItems = this.props.data.map((item, index) => {
       return (
         <li key={index}>
-          <a href={item.url} target="_blank">{item.name} {renderHTML(item.icon)}</a>
+          <a href={item.url} target="_blank" title={item.name}>{renderHTML(item.icon)}</a>
         </li>
       )
     })
