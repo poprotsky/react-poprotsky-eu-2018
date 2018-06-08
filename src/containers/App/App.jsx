@@ -7,15 +7,15 @@ import Routes from '../../routes'
 
 import data from 'Assets/data.json'
 
-import Nav from '../../components/Nav/'
-import Footer from '../../components/Footer/'
+import Header from '../../containers/Header/'
+import Footer from '../../containers/Footer/'
 
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
         <Favicon url={FaviconImg} />
-        <Nav data={data}/>
+        <Header data={data}/>
         <main className='main'>
           <Routes />
         </main>

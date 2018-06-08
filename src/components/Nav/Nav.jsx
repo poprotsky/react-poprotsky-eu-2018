@@ -6,10 +6,10 @@ export default class Nav extends Component {
   render() {
     const activeClass = 'is-active'
 
-    const navItems = this.props.data.nav.map((item, index) => {
+    const navItems = this.props.data.map((item, index) => {
       return (
         <li key={index}>
-          <NavLink to={'/'+item} activeClassName={activeClass}>{item}</NavLink>
+          <NavLink to={item.link} activeClassName={activeClass}>{item.name}</NavLink>
         </li>
       )
     })
