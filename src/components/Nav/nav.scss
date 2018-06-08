@@ -1,0 +1,14 @@
+.nav {
+  background-color: gray;
+  padding: 30px;
+  list-style: none;
+  a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px;
+    &.is-active {
+      color: yellow;
+      text-decoration: none;
+    }
+  }
+}

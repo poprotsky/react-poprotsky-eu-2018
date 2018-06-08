@@ -1,0 +1,24 @@
+{
+  "nav": [
+    "portfolio",
+    "about",
+    "contact"
+  ],
+  "social": [
+    {
+      "name": "behance",
+      "url": "https://www.behance.net/poprotsky_eu",
+      "icon": "<i class='i i-behance'></i>"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/poprotsky",
+      "icon": "<i class='i i-github'></i>"
+    },
+    {
+      "name": "linkedIn",
+      "url": "https://www.linkedin.com/in/eugenepoprotsky/",
+      "icon": "<i class='i i-linkedin'></i>"
+    }
+  ]
+}

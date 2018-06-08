@@ -1,1 +1,5 @@
-# react-poprotsky-eu-2018
+# Start server and watch changes
+`npm run server`
+
+# Start build
+`npm run build`

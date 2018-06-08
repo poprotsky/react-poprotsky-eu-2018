@@ -1,0 +1,49 @@
+body {
+  background: white;
+  font-family: "Catamaran", sans-serif;
+}
+
+.is-hidden {
+  display: none;
+}
+
+
+.news {
+  &__caption {
+    font-size: 50px;
+    margin-left: 30px;
+  }
+  &__container {
+    display: flex;
+  }
+  &__item {
+    flex: 1 1 33.33%;
+    margin: 30px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.2);
+  }
+  &__title {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+}
+
+.alert {
+  width: 100%;
+  margin: 0 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #3498db;
+  border-left: 6px solid #2980b9;
+  padding: 30px;
+  &__title {
+    font-size: 30px;
+    color: #fff;
+  }
+  &__desc {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+}
