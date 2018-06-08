@@ -13,7 +13,18 @@
     text-decoration: none;
   }
 }
-
+.app {
+  @extend .d-flex, .flex-column, .flex-nowrap;
+  min-height: 100vh;
+}
 .main {
-  
+  flex: 1 0 auto;
+  @extend .d-flex, .flex-row, .flex-nowrap;
+  &__inner {
+    width: 100%;
+  }
+}
+
+.section {
+  padding: 100px 0;
 }

@@ -32,5 +32,12 @@
       "url": "https://www.linkedin.com/in/eugenepoprotsky/",
       "icon": "<i class='i i-linkedin'></i>"
     }
-  ]
+  ],
+  "contactPage": {
+    "subtitle": "Contact",
+    "title": "Say Hello & Let’s talk",
+    "email": "<div class='email'><a href='mailto:eugene@poprotsky.eu'>eugene@poprotsky.eu</a><span class='email__text'>*you can write e-mail in english, polish, russian or ukrainian language</span></div>",
+    "addressFirst": "60-702 Poznan, Poland",
+    "addressSecond": "Glogowska street 31"
+  }
 }
