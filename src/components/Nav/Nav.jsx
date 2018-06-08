@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-
 import { Link, NavLink } from 'react-router-dom'
+
+import Button from '../Button/'
 
 export default class Nav extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Nav extends Component {
       <ul className='nav'>
          {navItems}
          <li className='nav__item'>
-           <a href='mailto:eugene@poprotsky.eu' className='btn'>Let's talk</a>
+           <Button href='mailto:eugene@poprotsky.eu' classExtra='btn--alt btn--rounded btn--black'>Let's talk</Button>
          </li>
       </ul>
     )

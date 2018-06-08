@@ -2,7 +2,7 @@
   @extend .d-flex, .flex-row, .flex-nowrap, .align-items-center;
   &__item {
     padding: 5px 25px;
-    a {
+    a:not(.btn) {
       position: relative;
       display: inline-block;
       font-size: 18px;

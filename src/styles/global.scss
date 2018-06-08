@@ -3,6 +3,7 @@ body {
   font-family: $default-font-family, sans-serif;
   font-weight: $default-font-weight;
   font-size: $default-font-size;
+  -webkit-font-smoothing: antialiased;
 }
 
 .is-hidden {

@@ -1,0 +1,49 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: $primary-color;
+  padding: 18px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px 5px #ebeef7;
+  line-height: 1;
+  @include transition();
+  @include hover() {
+    box-shadow: 0px 10px 30px 5px darken(#ebeef7, 5%);
+  }
+  span {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: $alt-text-color;
+    text-transform: none;
+    padding-left: 10px;
+  }
+  &::before {
+    content: none !important;
+  }
+  &--black {
+    background-color: #000;
+    color: #fff;
+  }
+  &--alt {
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: normal;
+    box-shadow: none;
+    &:hover {
+      box-shadow: none;
+      background-color: $secondary-color;
+    }
+  }
+  &--rounded {
+    border-radius: 50px;
+  }
+}
