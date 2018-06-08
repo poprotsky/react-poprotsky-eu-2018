@@ -1,0 +1,22 @@
+.social {
+  @extend .d-flex, .flex-row, .flex-nowrap, .align-items-center;
+  &__item {
+    padding: 5px 25px;
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      color: $secondary-color;
+      padding: 0;
+      text-decoration: none;
+      @include transition();
+      @include hover() {
+        color: #000;
+      }
+    }
+  }
+}

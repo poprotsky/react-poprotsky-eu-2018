@@ -5,14 +5,14 @@ export default class Social extends Component {
   render() {
     const socialItems = this.props.data.map((item, index) => {
       return (
-        <li key={index}>
+        <li className='social__item' key={index}>
           <a href={item.url} target="_blank" title={item.name}>{renderHTML(item.icon)}</a>
         </li>
       )
     })
 
     return (
-      <ul className='nav'>
+      <ul className='social'>
          {socialItems}
       </ul>
     )

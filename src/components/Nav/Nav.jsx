@@ -8,8 +8,8 @@ export default class Nav extends Component {
 
     const navItems = this.props.data.map((item, index) => {
       return (
-        <li key={index}>
-          <NavLink to={item.link} activeClassName={activeClass}>{item.name}</NavLink>
+        <li className='nav__item' key={index}>
+          <NavLink to={item.link} activeClassName={activeClass}><span>{item.name}</span></NavLink>
         </li>
       )
     })
@@ -17,7 +17,7 @@ export default class Nav extends Component {
     return (
       <ul className='nav'>
          {navItems}
-         <li>
+         <li className='nav__item'>
            <a href='mailto:eugene@poprotsky.eu' className='btn'>Let's talk</a>
          </li>
       </ul>

@@ -1,9 +1,17 @@
 @import '~normalize.css/normalize';
+@import 'sass-mediaqueries/_media-queries.scss';
+
+@import 'helpers/helpers';
+@import 'helpers/variables';
+@import 'helpers/mixins';
 
 @import 'global';
 @import 'fonts';
+@import 'common';
+
 
 @import '../components/Nav/nav';
+@import '../components/Social/social';
 
 @import '../containers/Header/header';
 @import '../containers/Footer/footer';

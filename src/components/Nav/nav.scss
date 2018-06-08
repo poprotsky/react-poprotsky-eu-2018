@@ -1,14 +1,44 @@
 .nav {
-  background-color: gray;
-  padding: 30px;
-  list-style: none;
-  a {
-    display: inline-block;
-    color: #fff;
-    padding: 5px;
-    &.is-active {
-      color: yellow;
+  @extend .d-flex, .flex-row, .flex-nowrap, .align-items-center;
+  &__item {
+    padding: 5px 25px;
+    a {
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      color: $secondary-color;
+      padding: 0;
       text-decoration: none;
+      @include transition();
+      > span {
+        position: relative;
+        z-index: 2;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 10px;
+        background-color: $gray-bg-alt;
+        z-index: 0;
+        transform: translate3d(-3px, 0, 0);
+        @include transition();
+      }
+      @include hover() {
+        &::before {
+          width: 40px;
+        }
+      }
+      &.is-active {
+        color: #000;
+        text-decoration: none;
+        &::before {
+          width: 40px;
+        }
+      }
     }
   }
 }

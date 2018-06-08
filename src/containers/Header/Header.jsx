@@ -13,7 +13,9 @@ export default class Header extends Component {
     return (
       <header className='header'>
         <div className='header__inner'>
-          <NavLink exact to='/'>{websiteName}</NavLink>
+          <div className='logo'>
+            <NavLink exact to='/'>{websiteName}</NavLink>
+          </div>
           <Nav data={nav}/>
           <Social data={social} />
         </div>

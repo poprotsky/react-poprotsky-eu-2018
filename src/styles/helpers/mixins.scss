@@ -1,0 +1,51 @@
+@mixin transition($property: all, $duration: .3s, $timing-function: ease-out, $delay: 0s) {
+	transition: $property $duration $timing-function $delay;
+}
+
+@mixin transform($transforms) {
+	transform: $transforms;
+}
+
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin hover() {
+	@include min-screen($xl-min) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin input-placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
