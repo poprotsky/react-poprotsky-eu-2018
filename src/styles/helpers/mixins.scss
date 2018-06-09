@@ -25,7 +25,7 @@
 }
 
 @mixin hover() {
-	@include min-screen($xl-min) {
+	@include max-screen($xl-max) {
     &:hover {
       @content;
     }

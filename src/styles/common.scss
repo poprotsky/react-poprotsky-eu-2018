@@ -1,3 +1,39 @@
+.app {
+  @extend .d-flex, .flex-column, .flex-nowrap;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1 0 auto;
+  @extend .d-flex, .flex-row, .flex-nowrap;
+  &__inner {
+    width: 100%;
+  }
+}
+
+.section {
+  padding: 100px 0;
+  &--alt {
+    padding: 80px 0 100px;
+  }
+}
+
+.container {
+  width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  @include max-screen($lg-max) {
+    width: 100%;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 50px;
+  margin: auto;
+}
+
 .logo {
   display: inline-block;
   line-height: 1;
@@ -12,19 +48,4 @@
     font-weight: inherit;
     text-decoration: none;
   }
-}
-.app {
-  @extend .d-flex, .flex-column, .flex-nowrap;
-  min-height: 100vh;
-}
-.main {
-  flex: 1 0 auto;
-  @extend .d-flex, .flex-row, .flex-nowrap;
-  &__inner {
-    width: 100%;
-  }
-}
-
-.section {
-  padding: 100px 0;
 }

@@ -1,0 +1,26 @@
+.contact-data {
+  &__email {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 300;
+    color: $primary-color;
+    margin-bottom: 5px;
+    &-label {
+      display: block;
+      font-size: 18px;
+      font-weight: 300;
+      color: $alt-text-color;
+      margin-bottom: 50px;
+    }
+  }
+  &__address {
+    li {
+      display: block;
+      font-size: 26px;
+      font-weight: 300;
+      color: $primary-color;
+      margin-bottom: 5px;
+    }
+  }
+}

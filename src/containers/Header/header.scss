@@ -2,5 +2,12 @@
   padding: 25px 50px;
   &__inner {
     @extend .d-flex, .flex-row, .flex-nowrap, .justify-content-between, .align-items-center;
+    .logo,
+    .social {
+      flex-basis: 20%;
+    }
+    .social {
+      justify-content: flex-end;
+    }
   }
 }

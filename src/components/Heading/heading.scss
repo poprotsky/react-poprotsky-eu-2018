@@ -1,8 +1,31 @@
 .heading {
+  margin-bottom: 40px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 20px;
+    background-color: $gray-bg-alt;
+    z-index: 0;
+    transform: translateX(-3px);
+  }
   &__subtitle {
-
+    font-size: 24px;
+    font-weight: 400;
+    color: $secondary-color;
+    margin-bottom: 5px;
+    line-height: 1;
   }
   &__title {
-    
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    line-height: 1;
+    font-size: 52px;
+    font-weight: 600;
+    color: $primary-color;
   }
 }

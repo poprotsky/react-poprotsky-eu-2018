@@ -8,12 +8,14 @@ export default class Portfolio extends Component {
     const activeClass = 'is-active'
     return (
       <div className='main__inner'>
-        <Heading subtitle='Portfolio' title='Websites and Apps' />
-        <ul>
-          <li>
-            <NavLink to='/portfolio/digitizer' activeClassName={activeClass}>Project</NavLink>
-          </li>
-        </ul>
+        <div className='container-fluid'>
+          <Heading subtitle='Portfolio' title='Websites and Apps' />
+          <ul>
+            <li>
+              <NavLink to='/portfolio/digitizer' activeClassName={activeClass}>Project</NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }

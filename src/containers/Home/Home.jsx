@@ -4,7 +4,9 @@ export default class Home extends Component {
   render() {
     return (
       <div className='main__inner home'>
-        <h1>Homepage</h1>
+        <div className='container-fluid'>
+          <h1>Homepage</h1>
+        </div>
       </div>
     )
   }
