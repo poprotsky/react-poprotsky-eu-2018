@@ -45,5 +45,26 @@
   "contactPage": {
     "subtitle": "Contact",
     "title": "Say Hello & Let’s talk"
+  },
+  "aboutPage": {
+    "textContent": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quisquam molestias adipisci obcaecati voluptates earum porro doloremque accusantium placeat sint assumenda eum, aperiam quasi voluptas recusandae similique modi magnam corporis.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus natus assumenda ipsam, doloremque ex unde quis. Consequatur, similique, nemo.</p>",
+    "numbers": [
+      {
+        "number": "8",
+        "label": "Years of experience as <span>designer</span>"
+      },
+      {
+        "number": "4",
+        "label": "Years of experience as <span>developer</span>"
+      },
+      {
+        "number": "384",
+        "label": "Complete <span>projects</span>"
+      },
+      {
+        "number": "101",
+        "label": "Satisfied <span>customers</span>"
+      }
+    ]
   }
 }

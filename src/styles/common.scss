@@ -41,11 +41,15 @@
   color: $primary-color;
   font-weight: 700;
   a {
-    display: inherit;
+    display: inline-block;
     line-height: inherit;
     color: inherit;
     font-size: inherit;
     font-weight: inherit;
     text-decoration: none;
   }
+}
+
+.lead {
+  font-size: 36px;
 }

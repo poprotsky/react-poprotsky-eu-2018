@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import renderHTML from 'react-render-html'
 
 import data from 'Assets/data.json'
 
