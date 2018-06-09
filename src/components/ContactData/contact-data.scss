@@ -6,6 +6,10 @@
     font-weight: 300;
     color: $primary-color;
     margin-bottom: 5px;
+    @include transition();
+    @include hover() {
+      color: $alt-text-color;
+    }
     &-label {
       display: block;
       font-size: 18px;

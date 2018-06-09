@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import renderHTML from 'react-render-html'
+// import renderHTML from 'react-render-html'
 
 import data from 'Assets/data.json'
 
 import Heading from '../../components/Heading/'
 import ContactData from '../../components/ContactData/'
+import Links from '../../components/Links/'
 
 export default class Contact extends Component {
   render() {
@@ -17,7 +18,8 @@ export default class Contact extends Component {
         <div className='container'>
           <div className='section section--alt'>
             <Heading subtitle={subtitle} title={title} />
-            <ContactData />
+            <ContactData data={data.contactData} />
+            <Links data={data.social} />
           </div>
         </div>
       </div>

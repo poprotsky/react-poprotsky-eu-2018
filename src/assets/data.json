@@ -20,17 +20,20 @@
     {
       "name": "behance",
       "url": "https://www.behance.net/poprotsky_eu",
-      "icon": "<i class='i i-behance'></i>"
+      "icon": "i-behance",
+      "title": "Design portfolio"
     },
     {
       "name": "github",
       "url": "https://github.com/poprotsky",
-      "icon": "<i class='i i-github'></i>"
+      "icon": "i-github",
+      "title": "Code repositories"
     },
     {
       "name": "linkedIn",
       "url": "https://www.linkedin.com/in/eugenepoprotsky/",
-      "icon": "<i class='i i-linkedin'></i>"
+      "icon": "i-linkedin",
+      "title": "Public profile"
     }
   ],
   "contactData": {

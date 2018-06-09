@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 
-import data from 'Assets/data.json'
-
 export default class ContactData extends Component {
   render() {
-    const contactData = data.contactData
-    const email = contactData.email
-    const emailLabel = contactData.emailLabel
-    const addressFirst = contactData.addressFirst
-    const addressSecond = contactData.addressSecond
+    const email = this.props.data.email
+    const emailLabel = this.props.data.emailLabel
+    const addressFirst = this.props.data.addressFirst
+    const addressSecond = this.props.data.addressSecond
 
     return (
       <div className='contact-data'>
