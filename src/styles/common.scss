@@ -83,3 +83,49 @@
     }
   }
 }
+
+.btn-group {
+  @extend .d-flex;
+}
+
+.btn-text {
+  display: inline-block;
+  text-decoration: none;
+  color: $alt-text-color;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 80px;
+  margin: 0;
+  line-height: 1;
+  @include hover() {
+    &::before {
+      width: 100%;
+    }
+  }
+  .dark-bg & {
+    color: #fff;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: $alt-text-color;
+    transform: translateY(-50%);
+    @include transition();
+    .dark-bg & {
+      background-color: #fff;
+    }
+  }
+  &--small {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 55px;
+    &::before {
+      width: 40px;
+    }
+  }
+}
