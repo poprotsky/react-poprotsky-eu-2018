@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 import Heading from '../../components/Heading/'
 
 export default class NotFound extends Component {
+  componentWillMount() {
+    window.scrollTo(0,0)
+  }
   render() {
     return (
       <div className='main__inner not-found gray-bg'>

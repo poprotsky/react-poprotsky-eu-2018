@@ -4,6 +4,9 @@ import { Link, NavLink } from 'react-router-dom'
 import Heading from '../../components/Heading/'
 
 export default class Portfolio extends Component {
+  componentWillMount() {
+    window.scrollTo(0,0)
+  }
   render() {
     const activeClass = 'is-active'
     return (

@@ -7,6 +7,9 @@ import data from 'Assets/data.json'
 import ContactData from '../../components/ContactData/'
 
 export default class Home extends Component {
+  componentWillMount() {
+    window.scrollTo(0,0)
+  }
   render() {
     const aboutShortData = renderHTML(data.aboutShortData)
 
