@@ -27,7 +27,11 @@
 }
 
 .gray-bg {
-  background-color: #f7f7f7;
+  background-color: $gray-bg;
+}
+
+.dark-bg {
+  background-color: $primary-color;
 }
 
 .margin-clear {

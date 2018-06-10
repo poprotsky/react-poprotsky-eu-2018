@@ -36,15 +36,12 @@
       "title": "Public profile"
     }
   ],
+  "aboutShortData": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p>",
   "contactData": {
     "email": "eugene@poprotsky.eu",
     "emailLabel": "*you can write e-mail in english, polish, russian or ukrainian language",
     "addressFirst": "60-702 Poznan, Poland",
     "addressSecond": "Glogowska street 31"
-  },
-  "contactPage": {
-    "subtitle": "Contact",
-    "title": "Say Hello & Let’s talk"
   },
   "aboutPage": {
     "textContent": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quisquam molestias adipisci obcaecati voluptates earum porro doloremque accusantium placeat sint assumenda eum, aperiam quasi voluptas recusandae similique modi magnam corporis.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus natus assumenda ipsam, doloremque ex unde quis. Consequatur, similique, nemo.</p>",
@@ -66,5 +63,9 @@
         "label": "Satisfied <span>customers</span>"
       }
     ]
+  },
+  "contactPage": {
+    "subtitle": "Contact",
+    "title": "Say Hello & Let’s talk"
   }
 }
