@@ -1,0 +1,47 @@
+.numbers {
+  &__item {
+    @extend .d-flex, .flex-column, .flex-nowrap, .align-items-center;
+    padding: 30px;
+    &-title {
+      @extend .d-flex;
+      text-align: center;
+      font-size: 52px;
+      font-weight: 700;
+      color: $primary-color;
+      margin-bottom: 30px;
+      &::after {
+        content: '+';
+        font-size: 26px;
+        padding-left: 3px;
+      }
+    }
+    &-text {
+      text-align: center;
+      margin: 0;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.35;
+      color: $alt-text-color;
+      strong {
+        position: relative;
+        font-size: inherit;
+        font-weight: 700;
+        color: $primary-color;
+        &::before {
+          content: '';
+          position: absolute;
+          right: -3px;
+          bottom: 5px;
+          width: 30px;
+          height: 14px;
+          background-color: $gray-bg-alt;
+          z-index: 0;
+        }
+      }
+      span {
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}

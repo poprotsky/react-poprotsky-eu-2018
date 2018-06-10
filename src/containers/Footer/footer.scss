@@ -2,8 +2,16 @@
   padding: 30px 50px;
   &__inner {
     @extend .d-flex, .flex-row, .flex-nowrap, .justify-content-between, .align-items-center;
+    .logo,
+    .social {
+      flex-basis: 20%;
+    }
+    .social {
+      justify-content: flex-end;
+    }
   }
   &__copyright {
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
     margin: 0;
