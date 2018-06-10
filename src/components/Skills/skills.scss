@@ -1,0 +1,175 @@
+.skills {
+  @extend .d-flex, .flex-row, .flex-nowrap, .align-items-center;
+  &__item {
+    $this: &;
+    position: relative;
+    flex: 0 0 50%;
+    background-color: #fff;
+    box-shadow: 0px 30px 45px 5px rgba(36, 34, 43, .15);
+    border-top-left-radius: $default-radius;
+    border-bottom-left-radius: $default-radius;
+    padding: 100px 100px 90px 50px;
+    &:first-child {
+      z-index: 0;
+    }
+    &:last-child {
+      z-index: 1;
+    }
+    &--dark {
+      position: relative;
+      background-color: $primary-color;
+      box-shadow: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 100px;
+      padding-bottom: 90px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 300px;
+        background-color: $primary-color;
+        border-top-right-radius: $default-radius;
+        border-bottom-right-radius: $default-radius;
+      }
+    }
+    &-title {
+      position: relative;
+      font-size: 36px;
+      font-weight: 600;
+      color: $primary-color;
+      margin: 0;
+      margin-bottom: 20px;
+      #{$this}--dark & {
+        color: $alt-text-color;
+      }
+      span {
+        position: relative;
+        z-index: 1;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 60px;
+        height: 14px;
+        background-color: $gray-bg-alt;
+        z-index: 0;
+        transform: translateX(-3px);
+        #{$this}--dark & {
+          background-color: $dark-bg-alt;
+        }
+      }
+    }
+    &-inner {
+      @extend .d-flex, .flex-column, .flex-nowrap;
+    }
+    &-group {
+      @extend .d-flex, .flex-column, .flex-nowrap;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &-title {
+        color: $alt-text-color;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin-top: 0;
+        #{$this}--dark & {
+          color: #626262;
+        }
+      }
+      &-inner {
+        @extend .d-flex, .flex-row, .flex-wrap;
+      }
+      &-item {
+        $group-item: &;
+        flex: 0 0 auto;
+        min-width: 90px;
+        text-align: center;
+        position: relative;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: $gray-bg;
+        border-radius: 5px;
+        padding: 12px;
+        overflow: hidden;
+        cursor: default;
+        @include transition();
+        #{$this}--dark & {
+          background-color: $dark-bg-alt;
+        }
+        @include hover() {
+          background-color: #fff;
+          box-shadow: 0px 0px 45px 5px #ebeef7;
+          #{$this}--dark & {
+            background-color: #4d495c;
+            box-shadow: none;
+          }
+          #{$group-item}-title {
+            transform: translateY(-30px);
+          }
+          .progress-bar {
+            transform: translateY(0);
+            &__progress {
+              transform: translateX(0);
+            }
+          }
+        }
+        &-title {
+          display: block;
+          position: relative;
+          z-index: 1;
+          text-transform: uppercase;
+          color: $alt-text-color-2;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: .5px;
+          @include transition();
+        }
+        .progress-bar {
+          @extend .d-flex, .flex-row, .flex-nowrap, .align-items-center, .justify-content-between;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          transform: translateY(30px);
+          padding: 12px;
+          @include transition();
+          &__bg {
+            width: 100%;
+            background-color: rgba($alt-text-color-2, .3);
+            height: 4px;
+            border-radius: 2px;
+            overflow: hidden;
+          }
+          &__progress {
+            display: block;
+            height: 4px;
+            background-color: $primary-color;
+            border-radius: 2px;
+            transform: translateX(-100%);
+            @include transition();
+            #{$this}--dark & {
+              background-color: #fff;
+            }
+          }
+          &__label {
+            padding-left: 10px;
+            text-align: right;
+            color: $alt-text-color-2;
+            font-size: 13px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}

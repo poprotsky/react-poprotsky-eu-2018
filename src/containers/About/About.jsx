@@ -5,6 +5,7 @@ import data from 'Assets/data.json'
 
 import Heading from '../../components/Heading/'
 import Button from '../../components/Button/'
+import Skills from '../../components/Skills/'
 import Numbers from '../../components/Numbers/'
 
 export default class About extends Component {
@@ -23,9 +24,7 @@ export default class About extends Component {
             <Button href='http://poprotsky.eu/cv_2018_eugene_poprotsky.pdf' target='_blank'>Download CV <span>(june 2018)</span></Button>
           </div>
         </div>
-        <div className='skills-group'>
-          {/* skills component x2 */}
-        </div>
+        <Skills data={data.skills} />
         <div className='container-fluid'>
           <div className='section'>
             <Numbers data={data.numbers} />
