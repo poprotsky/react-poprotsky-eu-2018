@@ -1,14 +1,19 @@
 .portfolio-items {
-
+  .row {
+    > [class^="col"] {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .portfolio-item {
-  @extend .d-flex, .flex-column, .flex-nowrap;
+  @extend .d-flex, .flex-column, .flex-nowrap, .justify-content-between;
   border-radius: $default-radius;
   box-shadow: $default-box-shadow;
   background-color: #fff;
   text-decoration: none;
   overflow: hidden;
+  height: 100%;
   &__head {
     position: relative;
     padding: 40px;

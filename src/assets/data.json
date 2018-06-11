@@ -233,6 +233,7 @@
     {
       "id": 0,
       "name": "Sharemote",
+      "folderName": "sharemote",
       "type": "Web app",
       "href": "/portfolio/sharemote",
       "thumbnail": "/assets/images/projects/sharemote/thumbnail.jpg",
@@ -241,10 +242,31 @@
     {
       "id": 1,
       "name": "Digitizer",
+      "folderName": "digitizer",
       "type": "Landing page",
       "href": "/portfolio/digitizer",
       "thumbnail": "/assets/images/projects/digitizer/thumbnail.jpg",
       "color": "#b2fff4"
+    },
+    {
+      "id": 2,
+      "name": "Course shelf",
+      "folderName": "course-shelf",
+      "type": "Mobile app",
+      "href": "/portfolio/course-shelf",
+      "thumbnail": "/assets/images/projects/course-shelf/thumbnail.jpg",
+      "color": "#b2edff",
+      "extraClass": "padding-clear--top",
+      "formatPng": true
+    },
+    {
+      "id": 3,
+      "name": "Randkuj.my",
+      "folderName": "randkujmy",
+      "type": "Portal",
+      "href": "/portfolio/randkujmy",
+      "thumbnail": "/assets/images/projects/randkujmy/thumbnail.jpg",
+      "color": "#ffd6b2"
     }
   ],
   "aboutShortData": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p>",
