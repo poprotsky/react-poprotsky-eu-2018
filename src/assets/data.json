@@ -267,6 +267,15 @@
       "href": "/portfolio/randkujmy",
       "thumbnail": "/assets/images/projects/randkujmy/thumbnail.jpg",
       "color": "#ffd6b2"
+    },
+    {
+      "id": 4,
+      "name": "Bionateo",
+      "folderName": "bionateo",
+      "type": "Web app",
+      "href": "/portfolio/bionateo",
+      "thumbnail": "/assets/images/projects/bionateo/thumbnail.jpg",
+      "color": "#e9ffb2"
     }
   ],
   "aboutShortData": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p>",

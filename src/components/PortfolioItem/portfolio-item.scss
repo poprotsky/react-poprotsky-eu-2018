@@ -14,6 +14,11 @@
   text-decoration: none;
   overflow: hidden;
   height: 100%;
+  @include transition();
+  @include hover() {
+    box-shadow: $hover-box-shadow;
+    transform: translateY(-20px);
+  }
   &__head {
     position: relative;
     padding: 40px;

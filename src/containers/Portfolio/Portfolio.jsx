@@ -5,6 +5,7 @@ import data from 'Assets/data.json'
 
 import Heading from '../../components/Heading/'
 import PortfolioItem from '../../components/PortfolioItem/'
+import Tabs from '../../components/Tabs/'
 
 export default class Portfolio extends Component {
   componentWillMount() {
@@ -15,9 +16,11 @@ export default class Portfolio extends Component {
     return (
       <div className='main__inner'>
         <div className='container-fluid'>
-          <Heading subtitle='Portfolio' title='Websites and Apps' />
-
-          <PortfolioItem data={data.portfolio} />
+          <div className='section section--alt'>
+            <Heading subtitle='Portfolio' title='Websites and Apps' />
+            <Tabs data={data.portfolio} />
+            <PortfolioItem data={data.portfolio} />
+          </div>
         </div>
       </div>
     )

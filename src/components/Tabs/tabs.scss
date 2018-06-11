@@ -1,0 +1,28 @@
+.tabs {
+  @extend .d-flex, .flex-row, .flex-wrap, .align-items-center;
+  margin: 0 -5px 45px;
+
+  &__item {
+    display: block;
+    padding: 14px 12px;
+    line-height: 1;
+    background-color: $gray-bg;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: $alt-text-color-2;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    @include transition();
+    @include hover() {
+      box-shadow: 0px 10px 30px 5px darken(#ebeef7, 5%);
+      background-color: #fff;
+    }
+    &.is-active {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
