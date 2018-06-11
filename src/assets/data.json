@@ -229,6 +229,24 @@
       ]
     }
   ],
+  "portfolio": [
+    {
+      "id": 0,
+      "name": "Sharemote",
+      "type": "Web app",
+      "href": "/portfolio/sharemote",
+      "thumbnail": "/assets/images/projects/sharemote/thumbnail.jpg",
+      "color": "#b2ddff"
+    },
+    {
+      "id": 1,
+      "name": "Digitizer",
+      "type": "Landing page",
+      "href": "/portfolio/digitizer",
+      "thumbnail": "/assets/images/projects/digitizer/thumbnail.jpg",
+      "color": "#b2fff4"
+    }
+  ],
   "aboutShortData": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p>",
   "contactData": {
     "email": "eugene@poprotsky.eu",
