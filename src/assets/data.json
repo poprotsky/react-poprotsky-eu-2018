@@ -231,51 +231,81 @@
   ],
   "portfolio": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Sharemote",
       "folderName": "sharemote",
       "type": "Web app",
       "href": "/portfolio/sharemote",
-      "thumbnail": "/assets/images/projects/sharemote/thumbnail.jpg",
-      "color": "#b2ddff"
+      "color": "#b2ddff",
+      "project": {
+        "subtitle": "App for sharing exercises/creating sessions",
+        "description": "Conducting sessions has never been so simple. Conduct sessions in an interactive mode using a smartphone, tablet or computer.",
+        "myRole": "UI/UX Designer & UI Developer",
+        "madeBy": "N-educatio",
+        "timeline": "2 months"
+      }
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Digitizer",
       "folderName": "digitizer",
       "type": "Landing page",
       "href": "/portfolio/digitizer",
-      "thumbnail": "/assets/images/projects/digitizer/thumbnail.jpg",
-      "color": "#b2fff4"
+      "color": "#b2fff4",
+      "project": {
+        "subtitle": "Landing page for the digitizing content app",
+        "description": "New, fresh and modern design in combination with a quality and incredibly interactive front-end layout.",
+        "myRole": "Web Designer & Front-end Developer",
+        "madeBy": "N-educatio",
+        "timeline": "2 months"
+      }
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Course shelf",
       "folderName": "course-shelf",
       "type": "Mobile app",
       "href": "/portfolio/course-shelf",
-      "thumbnail": "/assets/images/projects/course-shelf/thumbnail.jpg",
       "color": "#b2edff",
       "extraClass": "padding-clear--top",
-      "formatPng": true
+      "formatPng": true,
+      "project": {
+        "subtitle": "Mobile app for viewing interactive courses in mobile devices",
+        "description": "Interactive courses right in your pocket. Download courses to your phone or tablet and use them whenever you want.",
+        "myRole": "UI/UX Designer",
+        "madeBy": "N-educatio",
+        "timeline": "2 weeks"
+      }
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Randkuj.my",
       "folderName": "randkujmy",
       "type": "Portal",
       "href": "/portfolio/randkujmy",
-      "thumbnail": "/assets/images/projects/randkujmy/thumbnail.jpg",
-      "color": "#ffd6b2"
+      "color": "#ffd6b2",
+      "project": {
+        "subtitle": "Great Britain dating portal",
+        "description": "lorem ipsum dolor sit amet",
+        "myRole": "UI/Web Designer & UI Developer",
+        "madeBy": "Iguana studio",
+        "timeline": "6 months"
+      }
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Bionateo",
       "folderName": "bionateo",
       "type": "Web app",
       "href": "/portfolio/bionateo",
-      "thumbnail": "/assets/images/projects/bionateo/thumbnail.jpg",
-      "color": "#e9ffb2"
+      "color": "#e9ffb2",
+      "project": {
+        "subtitle": "Online store of medical hemp",
+        "description": "lorem ipsum dolor sit amet.",
+        "myRole": "Web designer",
+        "madeBy": "Grupa Tense / Tenseapp!",
+        "timeline": "2 months"
+      }
     }
   ],
   "aboutShortData": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p>",
