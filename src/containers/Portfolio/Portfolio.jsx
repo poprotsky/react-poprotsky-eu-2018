@@ -18,7 +18,7 @@ export default class Portfolio extends Component {
         <div className='container-fluid'>
           <div className='section section--alt'>
             <Heading subtitle='Portfolio' title='Websites and Apps' />
-            <Tabs data={data.portfolio} />
+            {/* <Tabs data={data.portfolio} /> */}
             <PortfolioItem data={data.portfolio} />
           </div>
         </div>

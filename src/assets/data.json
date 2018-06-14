@@ -238,10 +238,11 @@
       "href": "/portfolio/sharemote",
       "color": "#b2ddff",
       "project": {
-        "subtitle": "App for sharing exercises/creating sessions",
+        "subtitle": "App for sharing exercises and creating sessions",
         "description": "Conducting sessions has never been so simple. Conduct sessions in an interactive mode using a smartphone, tablet or computer.",
         "myRole": "UI/UX Designer & UI Developer",
         "madeBy": "N-educatio",
+        "madeByLink": "https://www.n-educatio.pl/",
         "timeline": "2 months"
       }
     },
@@ -257,6 +258,7 @@
         "description": "New, fresh and modern design in combination with a quality and incredibly interactive front-end layout.",
         "myRole": "Web Designer & Front-end Developer",
         "madeBy": "N-educatio",
+        "madeByLink": "https://www.n-educatio.pl/",
         "timeline": "2 months"
       }
     },
@@ -274,6 +276,7 @@
         "description": "Interactive courses right in your pocket. Download courses to your phone or tablet and use them whenever you want.",
         "myRole": "UI/UX Designer",
         "madeBy": "N-educatio",
+        "madeByLink": "https://www.n-educatio.pl/",
         "timeline": "2 weeks"
       }
     },
@@ -289,6 +292,7 @@
         "description": "lorem ipsum dolor sit amet",
         "myRole": "UI/Web Designer & UI Developer",
         "madeBy": "Iguana studio",
+        "madeByLink": "https://iguanastudio.pl/",
         "timeline": "6 months"
       }
     },
@@ -304,6 +308,7 @@
         "description": "lorem ipsum dolor sit amet.",
         "myRole": "Web designer",
         "madeBy": "Grupa Tense / Tenseapp!",
+        "madeByLink": "https://www.grupa-tense.pl/",
         "timeline": "2 months"
       }
     }

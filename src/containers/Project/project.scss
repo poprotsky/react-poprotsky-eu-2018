@@ -1,0 +1,100 @@
+.project {
+  overflow: hidden;
+  &__inner {
+    padding: 50px 0;
+  }
+  &__top {
+
+  }
+  &__main {
+    @extend .d-flex, .flex-column, .flex-nowrap, .justify-content-center;
+    padding: 100px 15vw 330px 0;
+    height: 100%;
+  }
+  &__title {
+    position: relative;
+    display: block;
+    font-size: 52px;
+    font-weight: 600;
+    color: $primary-color;
+    margin: 0;
+    margin-bottom: 15px;
+    span {
+      position: relative;
+      z-index: 1;
+    }
+    &-before {
+      position: absolute !important;
+      bottom: 3px;
+      left: 0;
+      width: 150px;
+      height: 20px;
+      background-color: $gray-bg-alt;
+      z-index: 0 !important;
+      transform: translateX(-3px);
+    }
+  }
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
+  &__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $alt-text-color;
+    margin: 0;
+  }
+  &__thumbnail {
+    @extend .d-flex, .flex-row, .flex-nowrap, .align-items-start;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px 10px rgba(118, 118, 119, 0.1);
+    width: calc(100% + 150px);
+    &--without-box-shadow {
+      box-shadow: none;
+    }
+  }
+  &__info {
+    padding: 60px 0;
+    background-color: $gray-bg;
+    margin-top: -200px;
+    &-item {
+      margin: 20px 0;
+      &-label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: $alt-text-color;
+        margin-bottom: 5px;
+      }
+      &-text {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        color: $secondary-color;
+        text-decoration: none;
+        position: relative;
+        &[href] {
+          @include hover() {
+            &::before {
+              background-color: $secondary-color;
+            }
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            background-color: $gray-bg-alt;
+            height: 2px;
+            @include transition();
+          }
+        }
+      }
+    }
+  }
+}

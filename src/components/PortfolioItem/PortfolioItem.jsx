@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 export default class PortfolioItem extends Component {
   render() {
     const portfolioItems = this.props.data.map((item, index) => {
+      const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
       return (
         <div className='col-3 col-xxxl-4 col-xl-6 col-md-12' key={index}>
           <Link to={item.href} className={'portfolio-item ' + item.folderName}>
@@ -14,7 +15,7 @@ export default class PortfolioItem extends Component {
                 </svg>
               </div>
               <div className={'portfolio-item__img ' + (item.formatPng ? 'box-shadow-clear' : '')}>
-                <img src={require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))} alt={item.name + ' - ' + item.type}/>
+                <img src={thumbnailUrl} alt={item.name + ' - ' + item.type}/>
               </div>
             </div>
             <div className='portfolio-item__footer'>
