@@ -14,6 +14,7 @@ export default class Project extends Component {
     const templateTop = data.portfolio.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail-large' + (item.formatPng ? '.png' : '.jpg'))
 
+
       if(projectUrl === item.folderName) {
         return (
           <div className='project__inner' key={index}>

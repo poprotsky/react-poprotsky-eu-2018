@@ -6,7 +6,7 @@ export default class PortfolioItem extends Component {
     const portfolioItems = this.props.data.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
       return (
-        <div className='col-3 col-xxxl-4 col-xl-6 col-md-12' key={index}>
+        <div className='col-4 col-xl-6 col-md-12' key={index}>
           <Link to={item.href} className={'portfolio-item ' + item.folderName}>
             <div className={'portfolio-item__head ' + (item.extraClass ? item.extraClass : '')}>
               <div className='portfolio-item__head-bg' style={{backgroundColor: item.color}}>

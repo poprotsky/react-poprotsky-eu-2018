@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+	ServerName http://poprotsky.eu/
+	DirectoryIndex index.html
+	DocumentRoot /
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	<Location>
+		RewriteEngine on
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteRule . /index.html [L]
+	</Location>
+</VirtualHost>
