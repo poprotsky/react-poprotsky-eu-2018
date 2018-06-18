@@ -19,7 +19,7 @@ export default class Portfolio extends Component {
           <div className='section section--alt'>
             <Heading subtitle='Portfolio' title='Websites and Apps' />
             {/* <Tabs data={data.portfolio} /> */}
-            <PortfolioItem data={data.portfolio} />
+            <PortfolioItem data={data.portfolio} number={data.portfolio.length}/>
           </div>
         </div>
       </div>

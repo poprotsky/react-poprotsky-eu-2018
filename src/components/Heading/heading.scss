@@ -28,4 +28,9 @@
     font-weight: 600;
     color: $primary-color;
   }
+  &--without-before {
+    &::before {
+      content: none;
+    }
+  }
 }
