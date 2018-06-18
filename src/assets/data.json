@@ -231,7 +231,7 @@
   ],
   "portfolio": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Sharemote",
       "folderName": "sharemote",
       "type": "Web app",
@@ -247,7 +247,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Digitizer",
       "folderName": "digitizer",
       "type": "Landing page",
@@ -263,7 +263,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Course shelf",
       "folderName": "course-shelf",
       "type": "Mobile app",
@@ -281,14 +281,14 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Randkuj.my",
       "folderName": "randkujmy",
       "type": "Portal",
       "href": "/portfolio/randkujmy",
       "color": "#ffd6b2",
       "project": {
-        "subtitle": "Great Britain dating portal",
+        "subtitle": "New wave of dating portal",
         "description": "lorem ipsum dolor sit amet",
         "myRole": "UI/Web Designer & UI Developer",
         "madeBy": "Iguana studio",
@@ -297,7 +297,7 @@
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "Bionateo",
       "folderName": "bionateo",
       "type": "E-commerce",
@@ -310,6 +310,22 @@
         "madeBy": "Grupa Tense / Tenseapp!",
         "madeByLink": "https://www.grupa-tense.pl/",
         "timeline": "2 months"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Coram",
+      "folderName": "coram",
+      "type": "Website",
+      "href": "/portfolio/coram",
+      "color": "#b2ecff",
+      "project": {
+        "subtitle": "Website for a bathroom furnishing seller",
+        "description": "lorem ipsum dolor sit amet.",
+        "myRole": "Web designer",
+        "madeBy": "Grupa Tense / Tenseapp!",
+        "madeByLink": "https://www.grupa-tense.pl/",
+        "timeline": "3 weeks"
       }
     }
   ],

@@ -32,6 +32,7 @@
       background-color: $gray-bg-alt;
       z-index: 0 !important;
       transform: translateX(-3px);
+      animation: width-grow-150 ease 1s;
     }
   }
   &__subtitle {

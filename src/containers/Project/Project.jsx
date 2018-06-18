@@ -84,7 +84,7 @@ export default class Project extends Component {
       if(projectUrl === item.folderName) {
         return (
           <div className='project__inner' key={index}>
-            bottom part
+            {/* bottom part */}
           </div>
         )
       }
