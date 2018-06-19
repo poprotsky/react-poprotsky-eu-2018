@@ -1,11 +1,22 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import renderHTML from 'react-render-html'
 
 import data from 'Assets/data.json'
+
+import Heading from '../../components/Heading/'
+import PortfolioItem from '../../components/PortfolioItem/'
 
 export default class Project extends Component {
   componentWillMount() {
     window.scrollTo(0,0)
+  }
+
+  componentDidUpdate(prevProps) {
+    let projectUrl = this.props.match.params.project
+    if (prevProps.projectUrl !== projectUrl) {
+      window.scrollTo(0,0)
+    }
   }
 
   render() {
@@ -13,7 +24,6 @@ export default class Project extends Component {
 
     const templateTop = data.portfolio.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail-large' + (item.formatPng ? '.png' : '.jpg'))
-
 
       if(projectUrl === item.folderName) {
         return (
@@ -81,18 +91,74 @@ export default class Project extends Component {
     })
 
     const templateBottom = data.portfolio.map((item, index) => {
+      const image_0 = require('Assets/images/projects/' + projectUrl + '/image-0.jpg')
+      const image_1 = require('Assets/images/projects/' + projectUrl + '/image-1.jpg')
+      const image_2 = require('Assets/images/projects/' + projectUrl + '/image-2.jpg')
+      const image_3 = require('Assets/images/projects/' + projectUrl + '/image-3.jpg')
+      const image_4 = require('Assets/images/projects/' + projectUrl + '/image-4.jpg')
+
       if(projectUrl === item.folderName) {
         return (
           <div className='project__inner' key={index}>
-            {/* bottom part */}
+            <div className='project__inner-item'>
+              <div className='container'>
+                {renderHTML(item.project.texts[0])}
+              </div>
+              <div className='container-fluid'>
+                <img src={image_0} alt=""/>
+              </div>
+            </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                {renderHTML(item.project.texts[1])}
+              </div>
+              <div className='container-fluid'>
+                <img src={image_1} alt=""/>
+              </div>
+            </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                {renderHTML(item.project.texts[2])}
+              </div>
+              <div className='container-fluid'>
+                <img src={image_2} alt=""/>
+              </div>
+            </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                {renderHTML(item.project.texts[3])}
+              </div>
+              <div className='container-fluid'>
+                <img src={image_3} alt=""/>
+              </div>
+            </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                {renderHTML(item.project.texts[4])}
+              </div>
+              <div className='container-fluid'>
+                <img src={image_4} alt=""/>
+              </div>
+            </div>
           </div>
         )
       }
     })
+
     return (
       <div className='main__inner project'>
         {templateTop}
         {templateBottom}
+        <div className='container-fluid'>
+          <div className='section section--alt'>
+            <Heading subtitle='Thanks for watching' title='Check out my other projects' />
+            <PortfolioItem data={data.portfolio} number={data.portfolio.length}/>
+          </div>
+        </div>
       </div>
     )
   }

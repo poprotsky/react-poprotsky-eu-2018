@@ -243,7 +243,21 @@
         "myRole": "UI/UX Designer & UI Developer",
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
-        "timeline": "2 months"
+        "timeline": "2 months",
+        "texts": [
+          "Sharemote text 0",
+          "Sharemote text 1",
+          "Sharemote text 2",
+          "Sharemote text 3",
+          "Sharemote text 4"
+        ],
+        "images": [
+          "assets/images/projects/sharemote/image-1.jpg",
+          "assets/images/projects/sharemote/image-2.jpg",
+          "assets/images/projects/sharemote/image-3.jpg",
+          "assets/images/projects/sharemote/image-4.jpg",
+          "assets/images/projects/sharemote/image-5.jpg"
+        ]
       }
     },
     {
@@ -259,7 +273,21 @@
         "myRole": "Web Designer & Front-end Developer",
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
-        "timeline": "2 months"
+        "timeline": "2 months",
+        "texts": [
+          "Digitizer text 0",
+          "Digitizer text 1",
+          "Digitizer text 2",
+          "Digitizer text 3",
+          "Digitizer text 4"
+        ],
+        "images": [
+          "assets/images/projects/digitizer/image-1.jpg",
+          "assets/images/projects/digitizer/image-2.jpg",
+          "assets/images/projects/digitizer/image-3.jpg",
+          "assets/images/projects/digitizer/image-4.jpg",
+          "assets/images/projects/digitizer/image-5.jpg"
+        ]
       }
     },
     {
@@ -277,7 +305,21 @@
         "myRole": "UI/UX Designer",
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
-        "timeline": "2 weeks"
+        "timeline": "2 weeks",
+        "texts": [
+          "Course shelf text 0",
+          "Course shelf text 1",
+          "Course shelf text 2",
+          "Course shelf text 3",
+          "Course shelf text 4"
+        ],
+        "images": [
+          "assets/images/projects/course-shelf/image-1.jpg",
+          "assets/images/projects/course-shelf/image-2.jpg",
+          "assets/images/projects/course-shelf/image-3.jpg",
+          "assets/images/projects/course-shelf/image-4.jpg",
+          "assets/images/projects/course-shelf/image-5.jpg"
+        ]
       }
     },
     {
@@ -293,7 +335,21 @@
         "myRole": "UI/Web Designer & UI Developer",
         "madeBy": "Iguana studio",
         "madeByLink": "https://iguanastudio.pl/",
-        "timeline": "6 months"
+        "timeline": "6 months",
+        "texts": [
+          "Randkuj.my text 0",
+          "Randkuj.my text 1",
+          "Randkuj.my text 2",
+          "Randkuj.my text 3",
+          "Randkuj.my text 4"
+        ],
+        "images": [
+          "assets/images/projects/randkujmy/image-1.jpg",
+          "assets/images/projects/randkujmy/image-2.jpg",
+          "assets/images/projects/randkujmy/image-3.jpg",
+          "assets/images/projects/randkujmy/image-4.jpg",
+          "assets/images/projects/randkujmy/image-5.jpg"
+        ]
       }
     },
     {
@@ -309,7 +365,21 @@
         "myRole": "Web designer",
         "madeBy": "Grupa Tense / Tenseapp!",
         "madeByLink": "https://www.grupa-tense.pl/",
-        "timeline": "2 months"
+        "timeline": "2 months",
+        "texts": [
+          "Bionateo text 0",
+          "Bionateo text 1",
+          "Bionateo text 2",
+          "Bionateo text 3",
+          "Bionateo text 4"
+        ],
+        "images": [
+          "assets/images/projects/bionateo/image-1.jpg",
+          "assets/images/projects/bionateo/image-2.jpg",
+          "assets/images/projects/bionateo/image-3.jpg",
+          "assets/images/projects/bionateo/image-4.jpg",
+          "assets/images/projects/bionateo/image-5.jpg"
+        ]
       }
     },
     {
@@ -325,7 +395,21 @@
         "myRole": "Web designer",
         "madeBy": "Grupa Tense / Tenseapp!",
         "madeByLink": "https://www.grupa-tense.pl/",
-        "timeline": "3 weeks"
+        "timeline": "3 weeks",
+        "texts": [
+          "Coram text 0",
+          "Coram text 1",
+          "Coram text 2",
+          "Coram text 3",
+          "Coram text 4"
+        ],
+        "images": [
+          "assets/images/projects/coram/image-1.jpg",
+          "assets/images/projects/coram/image-2.jpg",
+          "assets/images/projects/coram/image-3.jpg",
+          "assets/images/projects/coram/image-4.jpg",
+          "assets/images/projects/coram/image-5.jpg"
+        ]
       }
     }
   ],
