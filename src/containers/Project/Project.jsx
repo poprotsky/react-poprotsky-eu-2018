@@ -104,7 +104,7 @@ export default class Project extends Component {
               <div className='container'>
                 {renderHTML(item.project.texts[0])}
               </div>
-              <div className='container-fluid'>
+              <div className='project__inner-item-img'>
                 <img src={image_0} alt=""/>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default class Project extends Component {
               <div className='container'>
                 {renderHTML(item.project.texts[1])}
               </div>
-              <div className='container-fluid'>
+              <div className='project__inner-item-img'>
                 <img src={image_1} alt=""/>
               </div>
             </div>
@@ -122,7 +122,7 @@ export default class Project extends Component {
               <div className='container'>
                 {renderHTML(item.project.texts[2])}
               </div>
-              <div className='container-fluid'>
+              <div className='project__inner-item-img'>
                 <img src={image_2} alt=""/>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default class Project extends Component {
               <div className='container'>
                 {renderHTML(item.project.texts[3])}
               </div>
-              <div className='container-fluid'>
+              <div className='project__inner-item-img'>
                 <img src={image_3} alt=""/>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default class Project extends Component {
               <div className='container'>
                 {renderHTML(item.project.texts[4])}
               </div>
-              <div className='container-fluid'>
+              <div className='project__inner-item-img'>
                 <img src={image_4} alt=""/>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default class Project extends Component {
         {templateBottom}
         <div className='container-fluid'>
           <div className='section section--alt'>
-            <Heading subtitle='Thanks for watching' title='Check out my other projects' />
+            <Heading subtitle='Thanks for watching' title='Check out my other projects' classExtra='heading--center' />
             <PortfolioItem data={data.portfolio} number={data.portfolio.length}/>
           </div>
         </div>

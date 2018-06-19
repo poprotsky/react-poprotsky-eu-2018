@@ -1,6 +1,7 @@
 .heading {
   margin-bottom: 40px;
   position: relative;
+  $this: &;
   &::before {
     content: '';
     position: absolute;
@@ -31,6 +32,16 @@
   &--without-before {
     &::before {
       content: none;
+    }
+  }
+  &--center {
+    #{$this}__subtitle,
+    #{$this}__title {
+      text-align: center;
+    }
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
