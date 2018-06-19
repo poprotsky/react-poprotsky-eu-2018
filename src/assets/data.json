@@ -231,7 +231,6 @@
   ],
   "portfolio": [
     {
-      "id": 0,
       "name": "Sharemote",
       "folderName": "sharemote",
       "type": "Web app",
@@ -261,7 +260,6 @@
       }
     },
     {
-      "id": 1,
       "name": "Digitizer",
       "folderName": "digitizer",
       "type": "Landing page",
@@ -291,7 +289,6 @@
       }
     },
     {
-      "id": 2,
       "name": "Course shelf",
       "folderName": "course-shelf",
       "type": "Mobile app",
@@ -323,7 +320,6 @@
       }
     },
     {
-      "id": 3,
       "name": "Randkuj.my",
       "folderName": "randkujmy",
       "type": "Portal",
@@ -353,7 +349,6 @@
       }
     },
     {
-      "id": 4,
       "name": "Bionateo",
       "folderName": "bionateo",
       "type": "E-commerce",
@@ -383,7 +378,6 @@
       }
     },
     {
-      "id": 5,
       "name": "Coram",
       "folderName": "coram",
       "type": "Website",

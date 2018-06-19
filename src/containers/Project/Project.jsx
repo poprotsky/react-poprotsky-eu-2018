@@ -91,57 +91,69 @@ export default class Project extends Component {
     })
 
     const templateBottom = data.portfolio.map((item, index) => {
-      const image_0 = require('Assets/images/projects/' + projectUrl + '/image-0.jpg')
-      const image_1 = require('Assets/images/projects/' + projectUrl + '/image-1.jpg')
-      const image_2 = require('Assets/images/projects/' + projectUrl + '/image-2.jpg')
-      const image_3 = require('Assets/images/projects/' + projectUrl + '/image-3.jpg')
-      const image_4 = require('Assets/images/projects/' + projectUrl + '/image-4.jpg')
+      const image = [
+        require('Assets/images/projects/' + projectUrl + '/image-0.jpg'),
+        require('Assets/images/projects/' + projectUrl + '/image-1.jpg'),
+        require('Assets/images/projects/' + projectUrl + '/image-2.jpg'),
+        require('Assets/images/projects/' + projectUrl + '/image-3.jpg'),
+        require('Assets/images/projects/' + projectUrl + '/image-4.jpg')
+      ]
 
       if(projectUrl === item.folderName) {
         return (
           <div className='project__inner' key={index}>
             <div className='project__inner-item'>
               <div className='container'>
-                {renderHTML(item.project.texts[0])}
+                <div className='project__inner-item-text'>
+                  {item.project.texts[0] ? renderHTML(item.project.texts[0]) : null}
+                </div>
               </div>
               <div className='project__inner-item-img'>
-                <img src={image_0} alt=""/>
+                <img src={image[0] ? image[0] : null} alt=""/>
               </div>
             </div>
 
             <div className='project__inner-item'>
               <div className='container'>
-                {renderHTML(item.project.texts[1])}
+                <div className='project__inner-item-text'>
+                  {item.project.texts[1] ? renderHTML(item.project.texts[1]) : null}
+                </div>
               </div>
               <div className='project__inner-item-img'>
-                <img src={image_1} alt=""/>
+                <img src={image[1] ? image[1] : null} alt=""/>
               </div>
             </div>
 
             <div className='project__inner-item'>
               <div className='container'>
-                {renderHTML(item.project.texts[2])}
+                <div className='project__inner-item-text'>
+                  {item.project.texts[2] ? renderHTML(item.project.texts[2]) : null}
+                </div>
               </div>
               <div className='project__inner-item-img'>
-                <img src={image_2} alt=""/>
+                <img src={image[2] ? image[2] : null} alt=""/>
               </div>
             </div>
 
             <div className='project__inner-item'>
               <div className='container'>
-                {renderHTML(item.project.texts[3])}
+                <div className='project__inner-item-text'>
+                  {item.project.texts[3] ? renderHTML(item.project.texts[3]) : null}
+                </div>
               </div>
               <div className='project__inner-item-img'>
-                <img src={image_3} alt=""/>
+                <img src={image[3] ? image[3] : null} alt=""/>
               </div>
             </div>
 
             <div className='project__inner-item'>
               <div className='container'>
-                {renderHTML(item.project.texts[4])}
+                <div className='project__inner-item-text'>
+                  {item.project.texts[4] ? renderHTML(item.project.texts[4]) : null}
+                </div>
               </div>
               <div className='project__inner-item-img'>
-                <img src={image_4} alt=""/>
+                <img src={image[4] ? image[4] : null} alt=""/>
               </div>
             </div>
           </div>
