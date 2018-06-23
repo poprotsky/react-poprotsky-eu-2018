@@ -2,14 +2,24 @@
   overflow: hidden;
   &__inner {
     padding: 50px 0;
+    @include max-screen($md-max) {
+      padding: 30px 0;
+    }
   }
   &__top {
 
   }
   &__main {
     @extend .d-flex, .flex-column, .flex-nowrap, .justify-content-center;
-    padding: 100px 15vw 330px 0;
+    padding: 100px 13vw 330px 0;
     height: 100%;
+    @include max-screen($xl-max) {
+      padding-bottom: 130px;
+      padding-right: 30vw;
+    }
+    @include max-screen($md-max) {
+      padding: 60px 0 90px;
+    }
   }
   &__title {
     position: relative;
@@ -19,6 +29,12 @@
     color: $primary-color;
     margin: 0;
     margin-bottom: 15px;
+    @include max-screen($md-max) {
+      font-size: 46px;
+    }
+    @include max-screen($sm-max) {
+      font-size: 36px;
+    }
     span {
       position: relative;
       z-index: 1;
@@ -33,6 +49,11 @@
       z-index: 0 !important;
       transform: translateX(-3px);
       animation: width-grow-150 ease 1s;
+      @include max-screen($sm-max) {
+        width: 100px;
+        height: 14px;
+        animation: width-grow-100 ease 1s;
+      }
     }
   }
   &__subtitle {
@@ -40,6 +61,12 @@
     font-weight: 400;
     color: $secondary-color;
     margin-bottom: 30px;
+    @include max-screen($md-max) {
+      font-size: 20px;
+    }
+    @include max-screen($sm-max) {
+      font-size: 18px;
+    }
   }
   &__description {
     font-size: 20px;
@@ -47,6 +74,9 @@
     line-height: 1.4;
     color: $alt-text-color;
     margin: 0;
+    @include max-screen($sm-max) {
+      font-size: 18px;
+    }
   }
   &__thumbnail {
     @extend .d-flex, .flex-row, .flex-nowrap, .align-items-start;
@@ -62,6 +92,10 @@
     padding: 60px 0;
     background-color: $gray-bg;
     margin-top: -200px;
+    @include max-screen($xl-max) {
+      margin-top: -100px;
+      padding-top: 160px;
+    }
     &-item {
       margin: 20px 0;
       &-label {

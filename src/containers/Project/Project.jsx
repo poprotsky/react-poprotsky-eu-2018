@@ -31,7 +31,7 @@ export default class Project extends Component {
             <div className='container-fluid'>
               <div className='project__top'>
                 <div className='row'>
-                  <div className='col-6'>
+                  <div className='col-6 col-xl-12'>
                     <Link to='/portfolio' className='btn-text btn-text--small'>Back to portfolio</Link>
                     <div className='project__main'>
                       <h1 className='project__title'>
@@ -42,7 +42,7 @@ export default class Project extends Component {
                       <div className='project__description'>{item.project.description}</div>
                     </div>
                   </div>
-                  <div className='col-6'>
+                  <div className='col-6 col-xl-12'>
                     <div className={'project__thumbnail ' + (item.formatPng ? 'project__thumbnail--without-box-shadow' : '')}>
                       <img src={thumbnailUrl} alt={item.name + ' - ' + item.type}/>
                     </div>
@@ -54,27 +54,27 @@ export default class Project extends Component {
             <div className='project__info'>
               <div className='container-fluid'>
                 <div className='row'>
-                  <div className='col-7'>
+                  <div className='col-7 col-xl-12'>
                     <div className='row'>
-                      <div className='col-6'>
+                      <div className='col-6 col-sm-12'>
                         <div className='project__info-item'>
                           <span className='project__info-item-label'>My role</span>
                           <div className='project__info-item-text'>{item.project.myRole}</div>
                         </div>
                       </div>
-                      <div className='col-6'>
+                      <div className='col-6 col-sm-12'>
                         <div className='project__info-item'>
                           <span className='project__info-item-label'>Made by</span>
                           <a href={item.project.madeByLink} className='project__info-item-text' target='_blank'>{item.project.madeBy}</a>
                         </div>
                       </div>
-                      <div className='col-6'>
+                      <div className='col-6 col-sm-12'>
                         <div className='project__info-item'>
                           <span className='project__info-item-label'>Project type</span>
                           <div className='project__info-item-text'>{item.type}</div>
                         </div>
                       </div>
-                      <div className='col-6'>
+                      <div className='col-6 col-sm-12'>
                         <div className='project__info-item'>
                           <span className='project__info-item-label'>Project timeline</span>
                           <div className='project__info-item-text'>{item.project.timeline}</div>
