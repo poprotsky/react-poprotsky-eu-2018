@@ -1,5 +1,8 @@
 .skills {
   @extend .d-flex, .flex-row, .flex-nowrap, .align-items-center;
+  @include max-screen($xl-max) {
+    flex-flow: column nowrap !important;
+  }
   &__item {
     $this: &;
     position: relative;
@@ -9,6 +12,17 @@
     border-top-left-radius: $default-radius;
     border-bottom-left-radius: $default-radius;
     padding: 100px 100px 90px 50px;
+    @include max-screen($xl-max) {
+      flex: 0 0 100%;
+      width: 100%;
+      padding: 100px;
+      padding-bottom: 90px;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    @include max-screen($lg-max) {
+      padding: 60px 30px !important;
+    }
     &:first-child {
       z-index: 0;
     }
@@ -33,6 +47,9 @@
         background-color: $primary-color;
         border-top-right-radius: $default-radius;
         border-bottom-right-radius: $default-radius;
+        @include max-screen($xl-max) {
+          content: none;
+        }
       }
     }
     &-title {

@@ -2,6 +2,20 @@
   .row {
     > [class^="col"] {
       margin-bottom: 50px;
+      @include max-screen($lg-max) {
+        margin-bottom: 30px;
+      }
+      @include max-screen($sm-max) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .home & {
+    .row > :nth-child(4) {
+      display: none;
+      @include screen($md-max + 1, $xl-max) {
+        display: block;
+      }
     }
   }
 }
@@ -22,7 +36,13 @@
   &__head {
     position: relative;
     padding: 40px;
-    padding-right: 0;
+    padding-right: 0 !important;
+    @include max-screen($lg-max) {
+      padding: 30px;
+    }
+    @include max-screen($sm-max) {
+      padding: 25px;
+    }
     &-bg {
       position: absolute;
       top: 0;
@@ -52,6 +72,12 @@
   }
   &__footer {
     padding: 0 40px 40px;
+    @include max-screen($lg-max) {
+      padding: 0 30px 30px;
+    }
+    @include max-screen($sm-max) {
+      padding: 0 25px 25px;
+    }
   }
   &__subtitle {
     display: block;
@@ -61,6 +87,9 @@
     font-weight: 400;
     line-height: 1;
     margin-bottom: 10px;
+    @include max-screen($lg-max) {
+      margin-bottom: 5px;
+    }
   }
   &__title {
     margin: 0;
@@ -68,5 +97,11 @@
     font-size: 30px;
     font-weight: 600;
     line-height: 1;
+    @include max-screen($lg-max) {
+      font-size: 26px;
+    }
+    @include max-screen($sm-max) {
+      font-size: 22px;
+    }
   }
 }

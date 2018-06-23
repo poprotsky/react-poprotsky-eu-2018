@@ -44,4 +44,12 @@ p {
   margin-top: 0;
   line-height: 1.2;
   color: $alt-text-color;
+  @include max-screen($md-max) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  @include max-screen($sm-max) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }

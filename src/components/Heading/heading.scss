@@ -19,6 +19,12 @@
     color: $secondary-color;
     margin-bottom: 5px;
     line-height: 1;
+    @include max-screen($md-max) {
+      font-size: 20px;
+    }
+    @include max-screen($sm-max) {
+      font-size: 18px;
+    }
   }
   &__title {
     position: relative;
@@ -28,6 +34,12 @@
     font-size: 52px;
     font-weight: 600;
     color: $primary-color;
+    @include max-screen($md-max) {
+      font-size: 46px;
+    }
+    @include max-screen($sm-max) {
+      font-size: 36px;
+    }
   }
   &--without-before {
     &::before {

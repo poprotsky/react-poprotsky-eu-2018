@@ -13,11 +13,23 @@
 
 .section {
   padding: 100px 0;
+  @include max-screen($md-max) {
+    padding: 80px 0 !important;
+  }
+  @include max-screen($sm-max) {
+    padding: 60px 0 !important;
+  }
   &--alt {
     padding: 80px 0 100px;
   }
   &--homepage {
     padding: 50px 0;
+    @include max-screen($md-max) {
+      padding: 40px 0 !important;
+    }
+    @include max-screen($sm-max) {
+      padding: 30px 0 !important;
+    }
   }
 }
 
@@ -28,6 +40,8 @@
   margin: auto;
   @include max-screen($lg-max) {
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -35,6 +49,9 @@
   width: 100%;
   padding: 0 50px;
   margin: auto;
+  @include max-screen($lg-max) {
+    padding: 0 30px;
+  }
 }
 
 .logo {
@@ -55,6 +72,12 @@
 
 .lead {
   font-size: 36px;
+  @include max-screen($md-max) {
+    font-size: 30px;
+  }
+  @include max-screen($sm-max) {
+    font-size: 26px;
+  }
 }
 
 .heading-simple {
@@ -68,6 +91,9 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  @include max-screen($sm-max) {
+    font-size: 20px;
+  }
   .dark-bg & {
     color: #626262;
   }
@@ -89,6 +115,7 @@
 
 .btn-group {
   @extend .d-flex;
+  margin-top: 30px;
 }
 
 .btn-text {
@@ -105,6 +132,9 @@
     &::before {
       width: 100%;
     }
+  }
+  @include max-screen($sm-max) {
+    font-size: 16px;
   }
   .dark-bg & {
     color: #fff;

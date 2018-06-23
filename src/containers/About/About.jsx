@@ -24,7 +24,9 @@ export default class About extends Component {
           <div className='section section--alt'>
             <Heading subtitle={subtitle} title={title} />
             {textContent}
-            <Button href='http://poprotsky.eu/cv_2018_eugene_poprotsky.pdf' target='_blank'>Download CV <span>(june 2018)</span></Button>
+            <div className='btn-group'>
+              <Button href='http://poprotsky.eu/cv_2018_eugene_poprotsky.pdf' target='_blank'>Download CV <span>(june 2018)</span></Button>
+            </div>
           </div>
         </div>
         <Skills data={data.skills} />

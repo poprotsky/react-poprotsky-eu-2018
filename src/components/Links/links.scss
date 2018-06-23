@@ -6,11 +6,22 @@
   border-radius: $default-radius;
   overflow: hidden;
   margin: 70px 0;
+  @include max-screen($md-max) {
+    flex-flow: column nowrap !important;
+    margin-bottom: 0;
+  }
   &__item {
     flex: 0 0 33.333%;
+    @include max-screen($md-max) {
+      flex: 0 0 100%;
+      width: 100%;
+    }
     &:last-child {
       a {
         border-right: 0;
+        @include max-screen($md-max) {
+          border-bottom: 0;
+        }
       }
     }
     a {
@@ -25,6 +36,10 @@
       @include hover() {
         background-color: $gray-bg;
       }
+      @include max-screen($md-max) {
+        border-right: 0;
+        border-bottom: 1px solid $gray-bg;
+      }
     }
     &-icon {
       color: inherit;
@@ -36,6 +51,9 @@
       font-size: 20px;
       font-weight: 600;
       margin: 0;
+      @include max-screen($sm-max) {
+        font-size: 18px;
+      }
     }
   }
 }

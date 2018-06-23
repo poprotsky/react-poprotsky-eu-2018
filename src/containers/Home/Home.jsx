@@ -18,7 +18,7 @@ export default class Home extends Component {
       <div className='main__inner home'>
         <div className='container-fluid'>
           <div className='section section--homepage'>
-            <PortfolioItem data={data.portfolio} number="2" />
+            <PortfolioItem data={data.portfolio} number="3" />
           </div>
         </div>
         <div className='section dark-bg'>

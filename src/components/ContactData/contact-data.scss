@@ -10,12 +10,22 @@
     @include hover() {
       color: $alt-text-color;
     }
+    @include max-screen($md-max) {
+      font-size: 30px;
+    }
+    @include max-screen($sm-max) {
+      font-size: 26px;
+    }
     &-label {
       display: block;
       font-size: 18px;
       font-weight: 300;
       color: $alt-text-color;
       margin-bottom: 50px;
+      @include max-screen($sm-max) {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
     }
   }
   &__address {
@@ -25,6 +35,12 @@
       font-weight: 300;
       color: $primary-color;
       margin-bottom: 5px;
+      @include max-screen($md-max) {
+        font-size: 22px;
+      }
+      @include max-screen($sm-max) {
+        font-size: 18px;
+      }
     }
   }
 }
