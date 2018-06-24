@@ -1,13 +1,122 @@
 .header {
   padding: 25px 50px;
+  @include max-screen($lg-max) {
+    padding: 25px 30px;
+  }
   &__inner {
     @extend .d-flex, .flex-row, .flex-nowrap, .justify-content-between, .align-items-center;
-    .logo,
-    .social {
+    .logo {
       flex-basis: 20%;
     }
     .social {
       justify-content: flex-end;
+    }
+  }
+  &__nav {
+    flex-basis: 80%;
+    @extend .d-flex, .flex-row, .flex-nowrap, .justify-content-between, .align-items-center;
+    @include max-screen($lg-max) {
+      justify-content: flex-end !important;
+    }
+    &-inner {
+      @extend .d-flex, .flex-row, .flex-nowrap, .justify-content-between, .align-items-center;
+      width: 100%;
+      @include transition();
+      @include max-screen($lg-max) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        width: auto;
+        background-color: #fff;
+        flex-flow: column nowrap !important;
+        transform: translateX(100%);
+        .nav-is-open & {
+          transform: translateX(0);
+          box-shadow: $default-box-shadow;
+        }
+      }
+    }
+    &-toggle {
+      @extend .d-flex, .flex-column, .justify-content-end, .align-items-end;
+      display: none !important;
+      cursor: pointer;
+      @include max-screen($lg-max) {
+        position: relative;
+        display: flex !important;
+        width: 22px;
+        height: 9px;
+        padding-bottom: 7px;
+        z-index: 99;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 80%;
+          height: 2px;
+          background-color: $primary-color;
+          right: 0;
+          bottom: 0;
+          @include transition();
+        }
+        span {
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: $primary-color;
+          @include transition();
+        }
+        .nav-is-open & {
+          position: fixed;
+          &::after {
+            transform: rotate(45deg);
+            bottom: 80%;
+            width: 100%;
+          }
+          span {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+    .nav {
+      flex: 1 0 auto;
+      justify-content: center;
+      @include max-screen($lg-max) {
+        flex-flow: column nowrap !important;
+        align-items: flex-start !important;
+        width: 100%;
+        padding: 30px;
+        min-width: 250px;
+        overflow-y: auto;
+      }
+      &__item {
+        @include max-screen($lg-max) {
+          width: 100%;
+          padding: 20px 0;
+        }
+        a {
+          @include max-screen($lg-max) {
+            width: 100%;
+          }
+        }
+        .btn {
+          justify-content: center;
+        }
+      }
+    }
+    .social {
+      flex-basis: 20%;
+      @include max-screen($lg-max) {
+        flex: 0 0 auto;
+        padding: 30px 5px;
+      }
+      &__item {
+        @include max-screen($lg-max) {
+          padding-right: 25px;
+        }
+      }
     }
   }
 }

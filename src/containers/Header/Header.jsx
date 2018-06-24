@@ -16,8 +16,15 @@ export default class Header extends Component {
           <div className='logo'>
             <NavLink exact to='/'>{websiteName}</NavLink>
           </div>
-          <Nav data={nav}/>
-          <Social data={social} />
+          <div className='header__nav'>
+            <div className='header__nav-toggle' onClick={this.props.onClickFn}>
+              <span></span>
+            </div>
+            <div className='header__nav-inner'>
+              <Nav data={nav}/>
+              <Social data={social} />
+            </div>
+          </div>
         </div>
       </header>
     )

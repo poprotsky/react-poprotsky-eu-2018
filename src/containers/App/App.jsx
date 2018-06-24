@@ -11,11 +11,24 @@ import Header from '../../containers/Header/'
 import Footer from '../../containers/Footer/'
 
 export default class App extends Component {
+  navOpen = () => {
+    document.querySelector('.app').classList.toggle('nav-is-open')
+  }
+  hasClass = (element, cls) => {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+  }
+  navOverlayClose = (e) => {
+    if(this.hasClass(document.querySelector('.app'), 'nav-is-open')) {
+      if(e.target.className !== 'header__nav-toggle') {
+        document.querySelector('.app').classList.remove('nav-is-open')
+      }
+    }
+  }
   render() {
     return (
-      <div className='app'>
+      <div className='app' onClick={this.navOverlayClose}>
         <Favicon url={FaviconImg} />
-        <Header data={data}/>
+        <Header data={data} onClickFn={this.navOpen}/>
         <main className='main'>
           <Routes />
         </main>

@@ -25,10 +25,10 @@
   &--homepage {
     padding: 50px 0;
     @include max-screen($md-max) {
-      padding: 40px 0 !important;
+      padding: 30px 0 !important;
     }
     @include max-screen($sm-max) {
-      padding: 30px 0 !important;
+      padding: 15px 0 30px !important;
     }
   }
 }
@@ -60,6 +60,15 @@
   font-size: 26px;
   color: $primary-color;
   font-weight: 700;
+  @include max-screen($lg-max) {
+    font-size: 24px;
+  }
+  @include max-screen($md-max) {
+    font-size: 22px;
+  }
+  @include max-screen($sm-max) {
+    font-size: 20px;
+  }
   a {
     display: inline-block;
     line-height: inherit;
