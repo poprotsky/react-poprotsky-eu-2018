@@ -49,6 +49,7 @@
   width: 100%;
   padding: 0 50px;
   margin: auto;
+  max-width: 1920px;
   @include max-screen($lg-max) {
     padding: 0 30px;
   }
