@@ -101,10 +101,11 @@ export default class Project extends Component {
 
       if(projectUrl === item.folderName) {
         return (
-          <div className='project__inner' key={index}>
+          <div className='project__inner-items' key={index}>
             <div className='project__inner-item'>
               <div className='container'>
                 <div className='project__inner-item-text'>
+                  <span>01</span>
                   {item.project.texts[0] ? renderHTML(item.project.texts[0]) : null}
                 </div>
               </div>
@@ -116,6 +117,7 @@ export default class Project extends Component {
             <div className='project__inner-item'>
               <div className='container'>
                 <div className='project__inner-item-text'>
+                  <span>02</span>
                   {item.project.texts[1] ? renderHTML(item.project.texts[1]) : null}
                 </div>
               </div>
@@ -127,6 +129,7 @@ export default class Project extends Component {
             <div className='project__inner-item'>
               <div className='container'>
                 <div className='project__inner-item-text'>
+                  <span>03</span>
                   {item.project.texts[2] ? renderHTML(item.project.texts[2]) : null}
                 </div>
               </div>
@@ -138,6 +141,7 @@ export default class Project extends Component {
             <div className='project__inner-item'>
               <div className='container'>
                 <div className='project__inner-item-text'>
+                  <span>04</span>
                   {item.project.texts[3] ? renderHTML(item.project.texts[3]) : null}
                 </div>
               </div>
@@ -149,6 +153,7 @@ export default class Project extends Component {
             <div className='project__inner-item'>
               <div className='container'>
                 <div className='project__inner-item-text'>
+                  <span>05</span>
                   {item.project.texts[4] ? renderHTML(item.project.texts[4]) : null}
                 </div>
               </div>
@@ -156,6 +161,43 @@ export default class Project extends Component {
                 <img src={image[4] ? image[4] : null} alt=""/>
               </div>
             </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                <div className='project__inner-item-text'>
+                  <span>06</span>
+                  {item.project.texts[5] ? renderHTML(item.project.texts[5]) : null}
+                </div>
+              </div>
+              <div className='project__inner-item-img'>
+                <img src={image[4] ? image[4] : null} alt=""/>
+              </div>
+            </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                <div className='project__inner-item-text'>
+                  <span>07</span>
+                  {item.project.texts[6] ? renderHTML(item.project.texts[6]) : null}
+                </div>
+              </div>
+              <div className='project__inner-item-img'>
+                <img src={image[4] ? image[4] : null} alt=""/>
+              </div>
+            </div>
+
+            <div className='project__inner-item'>
+              <div className='container'>
+                <div className='project__inner-item-text'>
+                  <span>08</span>
+                  {item.project.texts[7] ? renderHTML(item.project.texts[7]) : null}
+                </div>
+              </div>
+              <div className='project__inner-item-img'>
+                <img src={image[4] ? image[4] : null} alt=""/>
+              </div>
+            </div>
+
           </div>
         )
       }

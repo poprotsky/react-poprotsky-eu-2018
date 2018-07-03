@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "server": "webpack-dev-server --content-base ./public --inline --hot",
+    "build": "webpack --env production",
+    "server": "webpack-dev-server --env development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eugene Poprotsky",
