@@ -7,15 +7,32 @@
     }
     &-item {
       &-text {
+        display: inline-block;
+        padding: 50px 0;
+        &-content {
+          @extend .d-flex, .flex-column, .flex-nowrap;
+          .project__inner-item-text--double & {
+            flex-flow: row nowrap !important;
+          }
+          @include max-screen($md-max) {
+            flex-flow: column nowrap !important;
+          }
+        }
         p {
           font-size: 20px;
-          padding-right: 60px;
-          width: 50%;
-          float: left;
-          @include max-screen($md-max) {
-            width: 100%;
-            float: none;
-            padding-right: 0;
+          small {
+            display: block;
+            margin-top: 20px;
+          }
+        }
+        &--double {
+          p {
+            padding-right: 60px;
+            width: 50%;
+            @include max-screen($md-max) {
+              width: 100%;
+              padding-right: 0;
+            }
           }
         }
       }

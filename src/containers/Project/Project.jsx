@@ -104,7 +104,7 @@ export default class Project extends Component {
           <div className='project__inner-items' key={index}>
             <div className='project__inner-item'>
               <div className='container'>
-                <div className='project__inner-item-text'>
+                <div className='project__inner-item-text project__inner-item-text--double'>
                   <span>01</span>
                   {item.project.texts[0] ? renderHTML(item.project.texts[0]) : null}
                 </div>
@@ -116,7 +116,7 @@ export default class Project extends Component {
 
             <div className='project__inner-item'>
               <div className='container'>
-                <div className='project__inner-item-text'>
+                <div className='project__inner-item-text project__inner-item-text--double'>
                   <span>02</span>
                   {item.project.texts[1] ? renderHTML(item.project.texts[1]) : null}
                 </div>
@@ -128,7 +128,7 @@ export default class Project extends Component {
 
             <div className='project__inner-item'>
               <div className='container'>
-                <div className='project__inner-item-text'>
+                <div className='project__inner-item-text project__inner-item-text--double'>
                   <span>03</span>
                   {item.project.texts[2] ? renderHTML(item.project.texts[2]) : null}
                 </div>
@@ -152,7 +152,7 @@ export default class Project extends Component {
 
             <div className='project__inner-item'>
               <div className='container'>
-                <div className='project__inner-item-text'>
+                <div className='project__inner-item-text project__inner-item-text--double'>
                   <span>05</span>
                   {item.project.texts[4] ? renderHTML(item.project.texts[4]) : null}
                 </div>
@@ -176,7 +176,7 @@ export default class Project extends Component {
 
             <div className='project__inner-item'>
               <div className='container'>
-                <div className='project__inner-item-text'>
+                <div className='project__inner-item-text project__inner-item-text--double'>
                   <span>07</span>
                   {item.project.texts[6] ? renderHTML(item.project.texts[6]) : null}
                 </div>
@@ -188,7 +188,7 @@ export default class Project extends Component {
 
             <div className='project__inner-item'>
               <div className='container'>
-                <div className='project__inner-item-text'>
+                <div className='project__inner-item-text project__inner-item-text--double'>
                   <span>08</span>
                   {item.project.texts[7] ? renderHTML(item.project.texts[7]) : null}
                 </div>

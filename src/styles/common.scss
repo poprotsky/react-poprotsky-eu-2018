@@ -81,10 +81,8 @@
 }
 
 .lead {
-  font-size: 36px;
-  @include max-screen($md-max) {
-    font-size: 30px;
-  }
+  font-size: 30px;
+  line-height: 1.2;
   @include max-screen($sm-max) {
     font-size: 26px;
   }

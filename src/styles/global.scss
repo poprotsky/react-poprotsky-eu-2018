@@ -43,11 +43,11 @@ img {
 }
 
 p {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 40px;
   margin-top: 0;
-  line-height: 1.2;
+  line-height: 1.4;
   color: $alt-text-color;
   @include max-screen($md-max) {
     font-size: 24px;
@@ -56,5 +56,11 @@ p {
   @include max-screen($sm-max) {
     font-size: 20px;
     margin-bottom: 20px;
+  }
+}
+
+h1 {
+  .dark-bg & {
+    color: #fff;
   }
 }

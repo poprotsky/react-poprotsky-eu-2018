@@ -244,14 +244,14 @@
         "madeByLink": "https://www.n-educatio.pl/",
         "timeline": "2 months",
         "texts": [
-          "<h2>Create a session</h2><p>To create a session, you must specify the name of the session, select an avatar and specify your name. If you do not specify the name of the session, the name will be the current date.</p><p>In addition, there is the option to include anonymous users - if this option is enabled students will not have to indicate their names and surnames - each student will receive a generated nickname.</p>",
-          "<h2>Invite your students and share interactive exercises</h2><p>Invite your students via QR or PIN code. After invitation, you can then share some of your interactive exercises.</p><p>Interactive exercises are generated with the help of authoring tools.</p>",
-          "<h2>Control students’ work</h2><p>After connecting to the session, your students will wait for the exercises until you start them.</p><p>After you press 'start' all students will receive your test on their devices.</p>",
-          "<h2>Analyze scores</h2><p>Each interactive activity has a related static chart, which displays students’ scores expressed in percentage.</p><p>In addition, there is more detailed summary information under the “session summary” tab: the data displayed in the table relates to students, exercises and results. In the last column, the average mark is displayed per student whereas the last row shows the average mark for any submitted exercise.</p>",
-          "<h2>User guide</h2><p>The first-time users of sharemote app will go through the guide. The guide will appear only at the beginning of the app, in order not to distract the users to perform their tasks.</p><p>When the new features will be added to the app, the guide will appear again and assist the users.</p>",
-          "<h2>Responsive</h2><p>Sharemote app is fully responsive, regardless the operating system, browser and display resolution. It can be easily used in each type of device.</p><p>Maximum quality without restrictions.</p>",
-          "<h2>UI elements & simple typography</h2><p>Each perfect app has a one-page summary including the typography, colors and UI elements. This page displays all UI elements of the application and their states.</p><p>Additionally, it supports the development process, by helping to create components and write code.</p>",
-          "<h2>Avatars pack</h2><p>30 unique and stylish avatars were prepared for the app. Thus, all users can easily make their choice.</p><p>If a student does not choose an avatar, one will be assigned to him randomly by the app. <small>*This pack is based on a free avatars pack, but has been heavily modified.</small></p>"
+          "<h2>Create a session</h2><div class='project__inner-item-text-content'><p>To create a session, you must specify the name of the session, select an avatar and specify your name. If you do not specify the name of the session, the name will be the current date.</p><p>In addition, there is the option to include anonymous users - if this option is enabled students will not have to indicate their names and surnames - each student will receive a generated nickname.</p></div>",
+          "<h2>Invite your students and share interactive exercises</h2><div class='project__inner-item-text-content'><p>Invite your students via QR or PIN code. After invitation, you can then share some of your interactive exercises.</p><p>Interactive exercises are generated with the help of authoring tools.</p></div>",
+          "<h2>Control students’ work</h2><div class='project__inner-item-text-content'><p>After connecting to the session, your students will wait for the exercises until you start them.</p><p>After you press 'start' all students will receive your test on their devices.</p></div>",
+          "<h2>Analyze scores</h2><div class='project__inner-item-text-content'><p>Each interactive activity has a related static chart, which displays students’ scores expressed in percentage.</p><p>In addition, there is more detailed summary information under the “session summary” tab: the data displayed in the table relates to students, exercises and results. In the last column, the average mark is displayed per student whereas the last row shows the average mark for any submitted exercise.</p></div>",
+          "<h2>User guide</h2><div class='project__inner-item-text-content'><p>The first-time users of sharemote app will go through the guide. The guide will appear only at the beginning of the app, in order not to distract the users to perform their tasks.</p><p>When the new features will be added to the app, the guide will appear again and assist the users.</p></div>",
+          "<h2>Responsive</h2><div class='project__inner-item-text-content'><p>Sharemote app is fully responsive, regardless the operating system, browser and display resolution. It can be easily used in each type of device.</p><p>Maximum quality without restrictions.</p></div>",
+          "<h2>UI elements & simple typography</h2><div class='project__inner-item-text-content'><p>Each perfect app has a one-page summary including the typography, colors and UI elements. This page displays all UI elements of the application and their states.</p><p>Additionally, it supports the development process, by helping to create components and write code.</p></div>",
+          "<h2>Avatars pack</h2><div class='project__inner-item-text-content'><p>30 unique and stylish avatars were prepared for the app. Thus, all users can easily make their choice.</p><p>If a student does not choose an avatar, one will be assigned to him randomly by the app. <small>*This pack is based on a free avatars pack, but has been heavily modified.</small></p></div>"
         ],
         "images": [
           "assets/images/projects/sharemote/image-1.jpg",
@@ -410,7 +410,7 @@
       }
     }
   ],
-  "aboutShortData": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p>",
+  "aboutShortData": "<h1>Hello, I’m Eugene Poprotsky</h1><p className='lead'>Many years I working with websites, web and mobile apps. Own way I started as a web designer, 8 years ago. Today I create an incredible, user-friendly and clear design and code for any types of websites and apps.</p>",
   "contactData": {
     "email": "eugene@poprotsky.eu",
     "emailLabel": "*you can write e-mail in english, polish, russian or ukrainian language",
@@ -420,7 +420,7 @@
   "aboutPage": {
     "subtitle": "About",
     "title": "Hello, I’m Eugene Poprotsky",
-    "textContent": "<p className='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc purus, blandit venenatis ex ac, molestie suscipit leo.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quisquam molestias adipisci obcaecati voluptates earum porro doloremque accusantium placeat sint assumenda eum, aperiam quasi voluptas recusandae similique modi magnam corporis.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus natus assumenda ipsam, doloremque ex unde quis. Consequatur, similique, nemo.</p>"
+    "textContent": "<p className='lead'>Many years I working with websites, web and mobile apps. Own way I started as a web designer, 8 years ago. Today I create an incredible, user-friendly and clear design and code for any types of websites and apps.</p><p>My greatest success is in combining very strong designer skills and powerful developer skills. This thing gives me a possibility of creating monolithic, thoughtful projects, same good in design and front-end code.</p><p>If you dream about a unique website or app, then you are in the right place! Contact me and let's create something amazing for you together.</p>"
   },
   "contactPage": {
     "subtitle": "Contact",
