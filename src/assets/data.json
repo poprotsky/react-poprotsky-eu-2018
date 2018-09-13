@@ -46,7 +46,7 @@
       "label": "Years of experience<br>as <strong><span>developer</span></strong>"
     },
     {
-      "number": "384",
+      "number": "523",
       "label": "Complete <strong><span>projects</span></strong>"
     },
     {
@@ -71,12 +71,12 @@
               "percent": "95"
             },
             {
-              "name": "JavaScript ES6",
-              "percent": "52"
-            },
-            {
               "name": "jQuery",
               "percent": "76"
+            },
+            {
+              "name": "JavaScript ES6",
+              "percent": "52"
             },
             {
               "name": "SCSS",
@@ -177,11 +177,19 @@
           "items": [
             {
               "name": "User experience design",
-              "percent": "75"
+              "percent": "84"
+            },
+            {
+              "name": "Research",
+              "percent": "78"
+            },
+            {
+              "name": "User Analyze & Testing",
+              "percent": "63"
             },
             {
               "name": "User interface design",
-              "percent": "91"
+              "percent": "92"
             },
             {
               "name": "Web design",
@@ -193,17 +201,21 @@
             },
             {
               "name": "Visual design",
-              "percent": "89"
+              "percent": "95"
             },
             {
-              "name": "Motion design",
-              "percent": "56"
+              "name": "Animated design",
+              "percent": "62"
             }
           ]
         },
         {
           "title": "Software",
           "items": [
+            {
+              "name": "Sketch app",
+              "percent": "96"
+            },
             {
               "name": "Adobe Photoshop",
               "percent": "92"
@@ -214,15 +226,15 @@
             },
             {
               "name": "Adobe XD",
-              "percent": "77"
+              "percent": "79"
             },
             {
               "name": "Adobe After Effects",
-              "percent": "63"
+              "percent": "54"
             },
             {
-              "name": "Sketch app",
-              "percent": "72"
+              "name": "Principle",
+              "percent": "67"
             }
           ]
         }
@@ -261,7 +273,7 @@
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
         "timeline": "3 months",
-        "imageUrl": ""
+        "imageUrl": "sharemote/main-img.jpg"
       }
     },
     {
