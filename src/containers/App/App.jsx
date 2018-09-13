@@ -10,6 +10,11 @@ import data from 'Assets/data.json'
 import Header from '../../containers/Header/'
 import Footer from '../../containers/Footer/'
 
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-60592089-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 export default class App extends Component {
   // componentDidMount() {
   //   setTimeout( () => {
