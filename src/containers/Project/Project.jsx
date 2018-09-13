@@ -56,30 +56,46 @@ export default class Project extends Component {
                 <div className='row'>
                   <div className='col-7 col-xl-12'>
                     <div className='row'>
-                      <div className='col-6 col-sm-12'>
-                        <div className='project__info-item'>
-                          <span className='project__info-item-label'>My role</span>
-                          <div className='project__info-item-text'>{item.project.myRole}</div>
+                      {item.project.myRole ?
+                        <div className='col-6 col-sm-12'>
+                          <div className='project__info-item'>
+                            <span className='project__info-item-label'>My role</span>
+                            <div className='project__info-item-text'>{item.project.myRole}</div>
+                          </div>
                         </div>
-                      </div>
-                      <div className='col-6 col-sm-12'>
-                        <div className='project__info-item'>
-                          <span className='project__info-item-label'>Made by</span>
-                          <a href={item.project.madeByLink} className='project__info-item-text' target='_blank'>{item.project.madeBy}</a>
+                        :
+                        null
+                      }
+                      {item.project.madeBy ?
+                        <div className='col-6 col-sm-12'>
+                          <div className='project__info-item'>
+                            <span className='project__info-item-label'>Made by</span>
+                            <a href={item.project.madeByLink} className='project__info-item-text' target='_blank'>{item.project.madeBy}</a>
+                          </div>
                         </div>
-                      </div>
-                      <div className='col-6 col-sm-12'>
-                        <div className='project__info-item'>
-                          <span className='project__info-item-label'>Project type</span>
-                          <div className='project__info-item-text'>{item.type}</div>
+                        :
+                        null
+                      }
+                      {item.type ?
+                        <div className='col-6 col-sm-12'>
+                          <div className='project__info-item'>
+                            <span className='project__info-item-label'>Project type</span>
+                            <div className='project__info-item-text'>{item.type}</div>
+                          </div>
                         </div>
-                      </div>
-                      <div className='col-6 col-sm-12'>
-                        <div className='project__info-item'>
-                          <span className='project__info-item-label'>Project timeline</span>
-                          <div className='project__info-item-text'>{item.project.timeline}</div>
+                        :
+                        null
+                      }
+                      {item.project.timeline ?
+                        <div className='col-6 col-sm-12'>
+                          <div className='project__info-item'>
+                            <span className='project__info-item-label'>Project timeline</span>
+                            <div className='project__info-item-text'>{item.project.timeline}</div>
+                          </div>
                         </div>
-                      </div>
+                        :
+                        null
+                      }
                     </div>
                   </div>
                 </div>
@@ -91,113 +107,14 @@ export default class Project extends Component {
     })
 
     const templateBottom = data.portfolio.map((item, index) => {
-      const image = [
-        require('Assets/images/projects/' + projectUrl + '/image-0.jpg'),
-        require('Assets/images/projects/' + projectUrl + '/image-1.jpg'),
-        require('Assets/images/projects/' + projectUrl + '/image-2.jpg'),
-        require('Assets/images/projects/' + projectUrl + '/image-3.jpg'),
-        require('Assets/images/projects/' + projectUrl + '/image-4.jpg')
-      ]
+      const imageUrl = require('Assets/images/projects/' + item.project.imageUrl)
 
       if(projectUrl === item.folderName) {
         return (
-          <div className='project__inner-items' key={index}>
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text project__inner-item-text--double'>
-                  <span>01</span>
-                  {item.project.texts[0] ? renderHTML(item.project.texts[0]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[0] ? image[0] : null} alt=""/>
-              </div>
+          <div className='project__inner-item' key={index}>
+            <div className='project__inner-item-img'>
+              <img src={imageUrl ? imageUrl : null} alt=""/>
             </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text project__inner-item-text--double'>
-                  <span>02</span>
-                  {item.project.texts[1] ? renderHTML(item.project.texts[1]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[1] ? image[1] : null} alt=""/>
-              </div>
-            </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text project__inner-item-text--double'>
-                  <span>03</span>
-                  {item.project.texts[2] ? renderHTML(item.project.texts[2]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[2] ? image[2] : null} alt=""/>
-              </div>
-            </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text'>
-                  <span>04</span>
-                  {item.project.texts[3] ? renderHTML(item.project.texts[3]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[3] ? image[3] : null} alt=""/>
-              </div>
-            </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text project__inner-item-text--double'>
-                  <span>05</span>
-                  {item.project.texts[4] ? renderHTML(item.project.texts[4]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[4] ? image[4] : null} alt=""/>
-              </div>
-            </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text'>
-                  <span>06</span>
-                  {item.project.texts[5] ? renderHTML(item.project.texts[5]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[4] ? image[4] : null} alt=""/>
-              </div>
-            </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text project__inner-item-text--double'>
-                  <span>07</span>
-                  {item.project.texts[6] ? renderHTML(item.project.texts[6]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[4] ? image[4] : null} alt=""/>
-              </div>
-            </div>
-
-            <div className='project__inner-item'>
-              <div className='container'>
-                <div className='project__inner-item-text project__inner-item-text--double'>
-                  <span>08</span>
-                  {item.project.texts[7] ? renderHTML(item.project.texts[7]) : null}
-                </div>
-              </div>
-              <div className='project__inner-item-img'>
-                <img src={image[4] ? image[4] : null} alt=""/>
-              </div>
-            </div>
-
           </div>
         )
       }

@@ -231,6 +231,24 @@
   ],
   "portfolio": [
     {
+      "name": "Seehome - freebie",
+      "folderName": "seehome",
+      "type": "Mobile app",
+      "href": "/portfolio/seehome",
+      "color": "#fac491",
+      "extraClass": "padding-clear--top",
+      "formatPng": true,
+      "project": {
+        "subtitle": "App for sharing exercises and creating sessions",
+        "description": "Conducting sessions has never been so simple. Conduct sessions in an interactive mode using a smartphone, tablet or computer.",
+        "myRole": "UI/UX Designer",
+        "madeBy": "Freebie project",
+        "madeByLink": "https://www.behance.net/gallery/69777041/Freebie-Seehome-Real-estate-mobile-app",
+        "timeline": "1 week",
+        "imageUrl": "seehome/main-img.jpg"
+      }
+    },
+    {
       "name": "Sharemote",
       "folderName": "sharemote",
       "type": "Web app",
@@ -242,24 +260,8 @@
         "myRole": "UI/UX Designer & UI Developer",
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
-        "timeline": "2 months",
-        "texts": [
-          "<h2>Create a session</h2><div class='project__inner-item-text-content'><p>To create a session, you must specify the name of the session, select an avatar and specify your name. If you do not specify the name of the session, the name will be the current date.</p><p>In addition, there is the option to include anonymous users - if this option is enabled students will not have to indicate their names and surnames - each student will receive a generated nickname.</p></div>",
-          "<h2>Invite your students and share interactive exercises</h2><div class='project__inner-item-text-content'><p>Invite your students via QR or PIN code. After invitation, you can then share some of your interactive exercises.</p><p>Interactive exercises are generated with the help of authoring tools.</p></div>",
-          "<h2>Control students’ work</h2><div class='project__inner-item-text-content'><p>After connecting to the session, your students will wait for the exercises until you start them.</p><p>After you press 'start' all students will receive your test on their devices.</p></div>",
-          "<h2>Analyze scores</h2><div class='project__inner-item-text-content'><p>Each interactive activity has a related static chart, which displays students’ scores expressed in percentage.</p><p>In addition, there is more detailed summary information under the “session summary” tab: the data displayed in the table relates to students, exercises and results. In the last column, the average mark is displayed per student whereas the last row shows the average mark for any submitted exercise.</p></div>",
-          "<h2>User guide</h2><div class='project__inner-item-text-content'><p>The first-time users of sharemote app will go through the guide. The guide will appear only at the beginning of the app, in order not to distract the users to perform their tasks.</p><p>When the new features will be added to the app, the guide will appear again and assist the users.</p></div>",
-          "<h2>Responsive</h2><div class='project__inner-item-text-content'><p>Sharemote app is fully responsive, regardless the operating system, browser and display resolution. It can be easily used in each type of device.</p><p>Maximum quality without restrictions.</p></div>",
-          "<h2>UI elements & simple typography</h2><div class='project__inner-item-text-content'><p>Each perfect app has a one-page summary including the typography, colors and UI elements. This page displays all UI elements of the application and their states.</p><p>Additionally, it supports the development process, by helping to create components and write code.</p></div>",
-          "<h2>Avatars pack</h2><div class='project__inner-item-text-content'><p>30 unique and stylish avatars were prepared for the app. Thus, all users can easily make their choice.</p><p>If a student does not choose an avatar, one will be assigned to him randomly by the app. <small>*This pack is based on a free avatars pack, but has been heavily modified.</small></p></div>"
-        ],
-        "images": [
-          "assets/images/projects/sharemote/image-1.jpg",
-          "assets/images/projects/sharemote/image-2.jpg",
-          "assets/images/projects/sharemote/image-3.jpg",
-          "assets/images/projects/sharemote/image-4.jpg",
-          "assets/images/projects/sharemote/image-5.jpg"
-        ]
+        "timeline": "3 months",
+        "imageUrl": "sharemote/main-img.jpg"
       }
     },
     {
@@ -275,20 +277,7 @@
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
         "timeline": "2 months",
-        "texts": [
-          "Digitizer text 0",
-          "Digitizer text 1",
-          "Digitizer text 2",
-          "Digitizer text 3",
-          "Digitizer text 4"
-        ],
-        "images": [
-          "assets/images/projects/digitizer/image-1.jpg",
-          "assets/images/projects/digitizer/image-2.jpg",
-          "assets/images/projects/digitizer/image-3.jpg",
-          "assets/images/projects/digitizer/image-4.jpg",
-          "assets/images/projects/digitizer/image-5.jpg"
-        ]
+        "imageUrl": "digitizer/main-img.jpg"
       }
     },
     {
@@ -305,21 +294,8 @@
         "myRole": "UI/UX Designer",
         "madeBy": "N-educatio",
         "madeByLink": "https://www.n-educatio.pl/",
-        "timeline": "2 weeks",
-        "texts": [
-          "Course shelf text 0",
-          "Course shelf text 1",
-          "Course shelf text 2",
-          "Course shelf text 3",
-          "Course shelf text 4"
-        ],
-        "images": [
-          "assets/images/projects/course-shelf/image-1.jpg",
-          "assets/images/projects/course-shelf/image-2.jpg",
-          "assets/images/projects/course-shelf/image-3.jpg",
-          "assets/images/projects/course-shelf/image-4.jpg",
-          "assets/images/projects/course-shelf/image-5.jpg"
-        ]
+        "timeline": "3 weeks",
+        "imageUrl": "course-shelf/main-img.jpg"
       }
     },
     {
@@ -329,26 +305,13 @@
       "href": "/portfolio/randkujmy",
       "color": "#ffd6b2",
       "project": {
-        "subtitle": "New wave of dating portal",
-        "description": "lorem ipsum dolor sit amet",
+        "subtitle": "Modern dating portal",
+        "description": "View photos, write messages, compare lifestyle, appearance, cultural and more criteria and find your soulmate on randkuj.my dating portal.",
         "myRole": "UI/Web Designer & UI Developer",
         "madeBy": "Iguana studio",
         "madeByLink": "https://iguanastudio.pl/",
-        "timeline": "6 months",
-        "texts": [
-          "Randkuj.my text 0",
-          "Randkuj.my text 1",
-          "Randkuj.my text 2",
-          "Randkuj.my text 3",
-          "Randkuj.my text 4"
-        ],
-        "images": [
-          "assets/images/projects/randkujmy/image-1.jpg",
-          "assets/images/projects/randkujmy/image-2.jpg",
-          "assets/images/projects/randkujmy/image-3.jpg",
-          "assets/images/projects/randkujmy/image-4.jpg",
-          "assets/images/projects/randkujmy/image-5.jpg"
-        ]
+        "timeline": "7 months",
+        "imageUrl": "randkujmy/main-img.jpg"
       }
     },
     {
@@ -359,25 +322,12 @@
       "color": "#e9ffb2",
       "project": {
         "subtitle": "Online store of medical hemp",
-        "description": "lorem ipsum dolor sit amet.",
+        "description": "On bionateo you find CBD and CBG oils, CBD dermocosmetics, CBD capsules, e-liquids, hemp teas, hemp sweets and CBD pastes from the best producers in the world.",
         "myRole": "Web designer",
         "madeBy": "Grupa Tense / Tenseapp!",
         "madeByLink": "https://www.grupa-tense.pl/",
         "timeline": "2 months",
-        "texts": [
-          "Bionateo text 0",
-          "Bionateo text 1",
-          "Bionateo text 2",
-          "Bionateo text 3",
-          "Bionateo text 4"
-        ],
-        "images": [
-          "assets/images/projects/bionateo/image-1.jpg",
-          "assets/images/projects/bionateo/image-2.jpg",
-          "assets/images/projects/bionateo/image-3.jpg",
-          "assets/images/projects/bionateo/image-4.jpg",
-          "assets/images/projects/bionateo/image-5.jpg"
-        ]
+        "imageUrl": "bionateo/main-img.jpg"
       }
     },
     {
@@ -387,26 +337,13 @@
       "href": "/portfolio/coram",
       "color": "#b2ecff",
       "project": {
-        "subtitle": "Website for a bathroom furnishing seller",
-        "description": "lorem ipsum dolor sit amet.",
+        "subtitle": "Website for a bathroom equipment seller",
+        "description": "Coram is international seller of equipment of renowned bathrooms and sanitary ceramics.",
         "myRole": "Web designer",
         "madeBy": "Grupa Tense / Tenseapp!",
         "madeByLink": "https://www.grupa-tense.pl/",
         "timeline": "3 weeks",
-        "texts": [
-          "Coram text 0",
-          "Coram text 1",
-          "Coram text 2",
-          "Coram text 3",
-          "Coram text 4"
-        ],
-        "images": [
-          "assets/images/projects/coram/image-1.jpg",
-          "assets/images/projects/coram/image-2.jpg",
-          "assets/images/projects/coram/image-3.jpg",
-          "assets/images/projects/coram/image-4.jpg",
-          "assets/images/projects/coram/image-5.jpg"
-        ]
+        "imageUrl": "coram/main-img.jpg"
       }
     }
   ],

@@ -2,15 +2,19 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 export default class PortfolioItem extends Component {
+  // componentWillMount() {
+  //   let el = document.querySelector('.portfolio-items');
+  //   el.parentNode.removeChild(el);
+  // }
   render() {
-    const portfolioItems = this.props.data.map((item, index) => {
+    let portfolioItems = this.props.data.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
 
       const number = this.props.number
 
       return (
         <div className={number >= index ? 'col-4 col-xl-6 col-md-12' : null} key={index} number={number}>
-          {number >= index  ?
+        {number >= index  ?
             <Link to={item.href} className={'portfolio-item ' + item.folderName}>
               <div className={'portfolio-item__head ' + (item.extraClass ? item.extraClass : '')}>
                 <div className='portfolio-item__head-bg' style={{backgroundColor: item.color}}>
@@ -27,7 +31,7 @@ export default class PortfolioItem extends Component {
                 <h2 className='portfolio-item__title'>{item.name}</h2>
               </div>
             </Link>
-          :
+            :
             null
           }
         </div>
