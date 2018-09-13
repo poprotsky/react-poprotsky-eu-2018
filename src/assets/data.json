@@ -231,7 +231,7 @@
   ],
   "portfolio": [
     {
-      "name": "Seehome - freebie",
+      "name": "Seehome",
       "folderName": "seehome",
       "type": "Mobile app",
       "href": "/portfolio/seehome",
@@ -239,8 +239,8 @@
       "extraClass": "padding-clear--top",
       "formatPng": true,
       "project": {
-        "subtitle": "Freebie App for sharing exercises and creating sessions",
-        "description": "Conducting sessions has never been so simple. Conduct sessions in an interactive mode using a smartphone, tablet or computer.",
+        "subtitle": "Freebie real estate mobile app for iPhone X",
+        "description": "Book rooms or houses - simple and fast. View photos, booking rooms and save it to favorites.",
         "myRole": "UI/UX Designer",
         "madeBy": "Freebie project",
         "madeByLink": "https://www.behance.net/gallery/69777041/Freebie-Seehome-Real-estate-mobile-app",

@@ -36,7 +36,7 @@
         transform: translateX(100%);
         .nav-is-open & {
           transform: translateX(0);
-          box-shadow: $default-box-shadow;
+          box-shadow: $alt-box-shadow;
         }
       }
     }
