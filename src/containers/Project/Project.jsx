@@ -107,7 +107,7 @@ export default class Project extends Component {
     })
 
     const templateBottom = data.portfolio.map((item, index) => {
-      const imageUrl = require('Assets/images/projects/' + item.project.imageUrl)
+      const imageUrl = item.project.imageUrl ? require('Assets/images/projects/' + item.project.imageUrl) : null
 
       if(projectUrl === item.folderName) {
         return (

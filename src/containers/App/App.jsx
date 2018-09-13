@@ -11,6 +11,11 @@ import Header from '../../containers/Header/'
 import Footer from '../../containers/Footer/'
 
 export default class App extends Component {
+  // componentDidMount() {
+  //   setTimeout( () => {
+  //     document.querySelector('.preloader').classList.add('is-hidden')
+  //   }, 500 );
+  // }
   navOpen = () => {
     document.querySelector('.app').classList.toggle('nav-is-open')
   }
@@ -27,6 +32,12 @@ export default class App extends Component {
   render() {
     return (
       <div className='app' onClick={this.navOverlayClose}>
+        {/* <div className='preloader'>
+          <div className='preloader__inner'>
+            <h2 className='preloader__title'>Poprotsky</h2>
+            <p className='preloader__subtitle'>UI/UX/Web design &amp; UI development</p>
+          </div>
+        </div> */}
         <Favicon url={FaviconImg} />
         <Header data={data} onClickFn={this.navOpen}/>
         <main className='main'>
