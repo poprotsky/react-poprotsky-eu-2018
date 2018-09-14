@@ -7,8 +7,74 @@
   <title>Eugene Poprotsky</title>
 
   <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,600,700" rel="stylesheet">
+  <style>
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 9999;
+      font-family: Catamaran, sans-serif;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex !important;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s ease-in-out;
+    }
+    .preloader__inner {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex !important;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .preloader__title {
+      text-align: center;
+      font-family: Catamaran, sans-serif;
+      font-size: 50px;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 15px;
+      line-height: 1.15;
+      transition: all .5s ease-in-out;
+    }
+    .preloader__subtitle {
+      text-align: center;
+      font-family: Catamaran, sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0;
+      line-height: 1.4;
+      color: #b7b7b7;
+      transition: all .5s ease-in-out;
+    }
+    .preloader.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      z-index: 0;
+    }
+    @media only screen and (max-width: 767px) {
+      .preloader__title {
+        font-size: 34px;
+      }
+      .preloader__subtitle {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="preloader">
+    <div class="preloader__inner">
+      <h2 class="preloader__title">Poprotsky</h2>
+      <p class="preloader__subtitle">UI/UX/Web design &amp; UI development</p>
+    </div>
+  </div>
   <div id="root"></div>
 </body>
 </html>
