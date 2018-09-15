@@ -23,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.i-arrow-top:before {
+  content: "\e903";
+}
 .i-behance:before {
   content: "\e900";
 }

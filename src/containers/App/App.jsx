@@ -17,12 +17,28 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default class App extends Component {
   componentDidMount() {
+    const scrollTopEl = document.querySelector('html')
+    const backToTopEl = document.querySelector('.back-to-top')
+    const preloaderEl = document.querySelector('.preloader')
+
     setTimeout( () => {
-      document.querySelector('.preloader').classList.add('is-hidden')
+      preloaderEl.classList.add('is-hidden')
     }, 500 );
+    window.addEventListener('scroll', function(e) {
+      if(scrollTopEl.scrollTop > 400) {
+        backToTopEl.classList.add('is-show');
+      } else {
+        backToTopEl.classList.remove('is-show');
+      }
+    })
+
   }
   navOpen = () => {
     document.querySelector('.app').classList.toggle('nav-is-open')
+  }
+  backToTop = (e) => {
+    e.preventDefault();
+
   }
   hasClass = (element, cls) => {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
@@ -43,6 +59,9 @@ export default class App extends Component {
           <Routes />
         </main>
         <Footer data={data} />
+        {/* <div className='back-to-top' onClick={this.backToTop}>
+          <i className='i i-arrow-top'></i>
+        </div> */}
       </div>
     )
   }
