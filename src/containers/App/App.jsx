@@ -17,25 +17,26 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default class App extends Component {
   componentDidMount() {
-    const scrollTopEl = document.querySelector('html')
     const backToTopEl = document.querySelector('.back-to-top')
     const preloaderEl = document.querySelector('.preloader')
 
     setTimeout( () => {
       preloaderEl.classList.add('is-hidden')
     }, 500 );
+
     window.addEventListener('scroll', function(e) {
-      if(scrollTopEl.scrollTop > 400) {
+      if(this.pageYOffset > 400) {
         backToTopEl.classList.add('is-show');
       } else {
         backToTopEl.classList.remove('is-show');
       }
     })
-
   }
+  
   navOpen = () => {
     document.querySelector('.app').classList.toggle('nav-is-open')
   }
+
   backToTop = (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -44,9 +45,11 @@ export default class App extends Component {
       behavior: 'smooth'
     })
   }
+
   hasClass = (element, cls) => {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
   }
+
   navOverlayClose = (e) => {
     if(this.hasClass(document.querySelector('.app'), 'nav-is-open')) {
       if(e.target.className !== 'header__nav-toggle') {
@@ -54,6 +57,7 @@ export default class App extends Component {
       }
     }
   }
+
   render() {
     return (
       <div className='app' onClick={this.navOverlayClose}>
