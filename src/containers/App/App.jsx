@@ -38,7 +38,11 @@ export default class App extends Component {
   }
   backToTop = (e) => {
     e.preventDefault();
-
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
   }
   hasClass = (element, cls) => {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
@@ -59,9 +63,9 @@ export default class App extends Component {
           <Routes />
         </main>
         <Footer data={data} />
-        {/* <div className='back-to-top' onClick={this.backToTop}>
+        <div className='back-to-top' onClick={this.backToTop}>
           <i className='i i-arrow-top'></i>
-        </div> */}
+        </div>
       </div>
     )
   }
