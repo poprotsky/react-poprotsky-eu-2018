@@ -12,7 +12,6 @@ export default class Portfolio extends Component {
     window.scrollTo(0,0)
   }
   render() {
-    const activeClass = 'is-active'
     return (
       <div className='main__inner'>
         <div className='container-fluid'>

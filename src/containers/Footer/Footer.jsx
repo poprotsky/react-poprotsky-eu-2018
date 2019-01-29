@@ -14,7 +14,7 @@ export default class Footer extends Component {
           <div className='logo'>
             <NavLink exact to='/'>{websiteName}</NavLink>
           </div>
-          <p className='footer__copyright'>2018 &copy; Copyright by Eugene Poprotsky. All rights reserved. Made in React</p>
+          <p className='footer__copyright'>2019 &copy; Copyright by Eugene Poprotsky. All rights reserved. Made in React</p>
           <Social data={social} />
         </div>
       </footer>

@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import renderHTML from 'react-render-html'
 
 import data from 'Assets/data.json'
+import projectTypes from 'Assets/projectTypes.json'
+import helpers from 'helpers/helpers'
 
 import Heading from '../../components/Heading/'
 import PortfolioItem from '../../components/PortfolioItem/'
@@ -24,6 +26,8 @@ export default class Project extends Component {
 
     const templateTop = data.portfolio.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail-large' + (item.formatPng ? '.png' : '.jpg'))
+
+      const projectType = helpers.findById(projectTypes, item.type)
 
       if(projectUrl === item.folderName) {
         return (
@@ -80,7 +84,7 @@ export default class Project extends Component {
                         <div className='col-6 col-sm-12'>
                           <div className='project__info-item'>
                             <span className='project__info-item-label'>Project type</span>
-                            <div className='project__info-item-text'>{item.type}</div>
+                            <div className='project__info-item-text'>{projectType ? projectType.title : null}</div>
                           </div>
                         </div>
                         :

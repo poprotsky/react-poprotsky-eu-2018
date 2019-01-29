@@ -38,19 +38,19 @@
   ],
   "numbers": [
     {
-      "number": "8",
+      "number": "9",
       "label": "Years of experience<br>as <strong><span>designer</span></strong>"
     },
     {
-      "number": "4",
+      "number": "5",
       "label": "Years of experience<br>as <strong><span>developer</span></strong>"
     },
     {
-      "number": "574",
+      "number": "637",
       "label": "Complete <strong><span>projects</span></strong>"
     },
     {
-      "number": "183",
+      "number": "194",
       "label": "Satisfied <strong><span>customers</span></strong>"
     }
   ],
@@ -245,7 +245,7 @@
     {
       "name": "Seehome",
       "folderName": "seehome",
-      "type": "Mobile app",
+      "type": 2,
       "href": "/portfolio/seehome",
       "color": "#fac491",
       "extraClass": "padding-clear--top",
@@ -263,7 +263,7 @@
     {
       "name": "Sharemote",
       "folderName": "sharemote",
-      "type": "Web app",
+      "type": 1,
       "href": "/portfolio/sharemote",
       "color": "#b2ddff",
       "project": {
@@ -279,7 +279,7 @@
     {
       "name": "Digitizer",
       "folderName": "digitizer",
-      "type": "Landing page",
+      "type": 4,
       "href": "/portfolio/digitizer",
       "color": "#b2fff4",
       "project": {
@@ -295,7 +295,7 @@
     {
       "name": "Course shelf",
       "folderName": "course-shelf",
-      "type": "Mobile app",
+      "type": 2,
       "href": "/portfolio/course-shelf",
       "color": "#b2edff",
       "extraClass": "padding-clear--top",
@@ -313,7 +313,7 @@
     {
       "name": "Randkuj.my",
       "folderName": "randkujmy",
-      "type": "Portal",
+      "type": 5,
       "href": "/portfolio/randkujmy",
       "color": "#ffd6b2",
       "project": {
@@ -329,7 +329,7 @@
     {
       "name": "Bionateo",
       "folderName": "bionateo",
-      "type": "E-commerce",
+      "type": 6,
       "href": "/portfolio/bionateo",
       "color": "#e9ffb2",
       "project": {
@@ -345,7 +345,7 @@
     {
       "name": "Coram",
       "folderName": "coram",
-      "type": "Website",
+      "type": 3,
       "href": "/portfolio/coram",
       "color": "#b2ecff",
       "project": {
@@ -359,20 +359,22 @@
       }
     }
   ],
-  "aboutShortData": "<h1>Hello, I’m Eugene Poprotsky</h1><p className='lead'>Many years I working with websites, web and mobile apps. Own way I started as a web designer, 8 years ago. Today I create an incredible, user-friendly and clear design and code for any types of websites and apps.</p>",
-  "contactData": {
-    "email": "eugene@poprotsky.eu",
-    "emailLabel": "*you can write e-mail in english, polish, russian or ukrainian language",
-    "addressFirst": "60-702 Poznan, Poland",
-    "addressSecond": "Glogowska street 31"
-  },
+  "aboutShortData": "<h1>Hello, I’m Eugene Poprotsky</h1><p className='lead'>Many years I working with websites, web and mobile apps. Own way I started as a web designer, 9 years ago. Today I create an incredible, user-friendly and clear design and code for any types of websites and apps.</p>",
   "aboutPage": {
     "subtitle": "About",
     "title": "Hello, I’m Eugene Poprotsky",
-    "textContent": "<p className='lead'>Many years I working with websites, web and mobile apps. Own way I started as a web designer, 8 years ago. Today I create an incredible, user-friendly and clear design and code for any types of websites and apps.</p><p>My greatest success is in combining very strong designer skills and powerful developer skills. This thing gives me a possibility of creating monolithic, thoughtful projects, same good in design and front-end code.</p><p>If you dream about a unique website or app, then you are in the right place! Contact me and let's create something amazing for you together.</p>"
+    "textContent": "<p className='lead'>Many years I working with websites, web and mobile apps. Own way I started as a web designer, 9 years ago. Today I create an incredible, user-friendly and clear design and code for any types of websites and apps.</p><p>My greatest success is in combining very strong designer skills and powerful developer skills. This thing gives me a possibility of creating monolithic, thoughtful projects, same good in design and front-end code.</p><p>If you dream about a unique website or app, then you are in the right place! Contact me and let's create something amazing for you together.</p>"
   },
   "contactPage": {
     "subtitle": "Contact",
     "title": "Say Hello & Let’s talk"
+  },
+  "contactData": {
+    "email": "eugene@poprotsky.eu",
+    "emailLabel": "*you can speak or write e-mail in english, polish, russian or ukrainian language",
+    "phone": "+48 730 877 807",
+    "phoneHref": "48730877807",
+    "addressFirst": "60-702 Poznan, Poland",
+    "addressSecond": "Glogowska street 31"
   }
 }

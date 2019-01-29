@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
+import projectTypes from 'Assets/projectTypes.json'
+import helpers from 'helpers/helpers'
+
 export default class PortfolioItem extends Component {
-  // componentWillMount() {
-  //   let el = document.querySelector('.portfolio-items');
-  //   el.parentNode.removeChild(el);
-  // }
+  componentWillMount() {
+    // let el = document.querySelector('.portfolio-items');
+    // el.parentNode.removeChild(el);
+  }
+
   render() {
     let portfolioItems = this.props.data.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
 
       const number = this.props.number
+
+      const projectType = helpers.findById(projectTypes, item.type)
+
 
       return (
         <div className={number >= index ? 'col-4 col-xl-6 col-md-12' : null} key={index} number={number}>
@@ -27,7 +34,7 @@ export default class PortfolioItem extends Component {
                 </div>
               </div>
               <div className='portfolio-item__footer'>
-                <span className='portfolio-item__subtitle'>{item.type}</span>
+                <span className='portfolio-item__subtitle'>{projectType ? projectType.title : null}</span>
                 <h2 className='portfolio-item__title'>{item.name}</h2>
               </div>
             </Link>
