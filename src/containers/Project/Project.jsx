@@ -7,7 +7,7 @@ import projectTypes from 'Assets/projectTypes.json'
 import helpers from 'helpers/helpers'
 
 import Heading from '../../components/Heading/'
-import PortfolioItem from '../../components/PortfolioItem/'
+import PortfolioItemSelected from '../../components/PortfolioItemSelected/'
 
 export default class Project extends Component {
   componentWillMount() {
@@ -131,7 +131,7 @@ export default class Project extends Component {
         <div className='container-fluid'>
           <div className='section section--alt'>
             <Heading subtitle='Thanks for watching' title='Check out my other projects' classExtra='heading--center' />
-            <PortfolioItem data={data.portfolio} number={data.portfolio.length}/>
+            <PortfolioItemSelected data={data.portfolio} selected={[6,5,4,2]}/>
           </div>
         </div>
       </div>

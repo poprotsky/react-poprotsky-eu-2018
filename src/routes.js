@@ -10,6 +10,7 @@ import Contact from './containers/Contact/'
 import NotFound from './containers/NotFound/'
 
 export default class Routes extends Component {
+
   render() {
     return (
       <Switch>

@@ -1,26 +1,26 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "title": "Web app"
   },
   {
-    "id": 2,
+    "id": 1,
     "title": "Mobile app"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Website"
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Landing page"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Portal"
   },
   {
-    "id": 6,
+    "id": 5,
     "title": "E-commerce"
   }
 ]

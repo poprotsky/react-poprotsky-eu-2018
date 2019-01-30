@@ -6,7 +6,7 @@ export default class Tabs extends Component {
     let tabsItems = this.props.data.map((item, index) => {
       return (
         <div className='tabs__item' key={index}>
-          {item.type}
+          {item.title}
         </div>
       )
     })

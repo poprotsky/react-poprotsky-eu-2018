@@ -4,19 +4,37 @@ import { Link } from 'react-router-dom'
 import projectTypes from 'Assets/projectTypes.json'
 import helpers from 'helpers/helpers'
 
-export default class PortfolioItem extends Component {
+export default class PortfolioItemSelected extends Component {
   componentWillMount() {
     // let el = document.querySelector('.portfolio-items');
     // el.parentNode.removeChild(el);
   }
 
   render() {
-    const portfolio = [...this.props.data]
+    const selectedProjects = this.props.selected
 
-    let portfolioItems = portfolio.reverse().map((item, index) => {
+    let portfolioItems = selectedProjects.map((projectId, index) => {
+
+      const item = helpers.findById(this.props.data, projectId)
+
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
 
       const projectType = helpers.findById(projectTypes, item.type)
+
+      console.log(selectedProjects)
+/*
+const selectedProjects = [1, 2, 3];
+let portfolioItems = selectedProjects.reverse().map((projectId, index) => {
+  const item = helpers.findById(this.props.data, projectId);
+  const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
+
+  const number = 100;//this.props.number
+
+  const projectType = helpers.findById(projectTypes, item.type)
+
+  .filter((item) => item.type === 1)
+*/
+
 
       return (
         <div className='col-4 col-xl-6 col-md-12' key={index}>

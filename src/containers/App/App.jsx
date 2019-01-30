@@ -32,7 +32,7 @@ export default class App extends Component {
       }
     })
   }
-
+  
   navOpen = () => {
     document.querySelector('.app').classList.toggle('nav-is-open')
   }
