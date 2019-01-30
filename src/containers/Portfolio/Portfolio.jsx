@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import data from 'Assets/data.json'
+import portfolio from 'Assets/portfolio.json'
 import projectTypes from 'Assets/projectTypes.json'
 
 import Heading from '../../components/Heading/'
@@ -19,7 +19,7 @@ export default class Portfolio extends Component {
           <div className='section section--alt'>
             <Heading subtitle='Portfolio' title='Websites and Apps' />
             <Tabs data={projectTypes} />
-            <PortfolioItem data={data.portfolio}/>
+            <PortfolioItem data={portfolio}/>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import renderHTML from 'react-render-html'
 
 import data from 'Assets/data.json'
+import portfolio from 'Assets/portfolio.json'
 import projectTypes from 'Assets/projectTypes.json'
 
 import PortfolioItemElected from '../../components/PortfolioItemElected/'
@@ -21,11 +22,11 @@ export default class Home extends Component {
 
     return (
       <div className='main__inner home'>
-        <PortfolioItemElected id={2} />
+        <PortfolioItemElected id={1} />
 
         <div className='container-fluid'>
           <div className='section section--homepage'>
-            <PortfolioItemSelected data={data.portfolio} selected={[6,5,4,2]} />
+            <PortfolioItemSelected data={portfolio} selected={[6,5,4,2]} />
           </div>
         </div>
         <div className='section dark-bg'>

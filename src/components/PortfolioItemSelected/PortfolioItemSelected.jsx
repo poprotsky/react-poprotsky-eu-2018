@@ -5,10 +5,6 @@ import projectTypes from 'Assets/projectTypes.json'
 import helpers from 'helpers/helpers'
 
 export default class PortfolioItemSelected extends Component {
-  componentWillMount() {
-    // let el = document.querySelector('.portfolio-items');
-    // el.parentNode.removeChild(el);
-  }
 
   render() {
     const selectedProjects = this.props.selected
@@ -21,7 +17,6 @@ export default class PortfolioItemSelected extends Component {
 
       const projectType = helpers.findById(projectTypes, item.type)
 
-      console.log(selectedProjects)
 /*
 const selectedProjects = [1, 2, 3];
 let portfolioItems = selectedProjects.reverse().map((projectId, index) => {

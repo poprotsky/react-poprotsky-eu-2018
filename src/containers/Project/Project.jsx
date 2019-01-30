@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import renderHTML from 'react-render-html'
 
-import data from 'Assets/data.json'
+import portfolio from 'Assets/portfolio.json'
 import projectTypes from 'Assets/projectTypes.json'
 import helpers from 'helpers/helpers'
 
@@ -24,7 +24,7 @@ export default class Project extends Component {
   render() {
     const projectUrl = this.props.match.params.project
 
-    const templateTop = data.portfolio.map((item, index) => {
+    const templateTop = portfolio.map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail-large' + (item.formatPng ? '.png' : '.jpg'))
 
       const projectType = helpers.findById(projectTypes, item.type)
@@ -42,8 +42,8 @@ export default class Project extends Component {
                         <span>{item.name}</span>
                         <span className='project__title-before' style={{backgroundColor: item.color}}></span>
                       </h1>
-                      <div className='project__subtitle'>{item.project.subtitle}</div>
-                      <div className='project__description'>{item.project.description}</div>
+                      <div className='project__subtitle'>{item.details.subtitle}</div>
+                      <div className='project__description'>{item.details.description}</div>
                     </div>
                   </div>
                   <div className='col-6 col-xl-12'>
@@ -60,21 +60,21 @@ export default class Project extends Component {
                 <div className='row'>
                   <div className='col-7 col-xl-12'>
                     <div className='row'>
-                      {item.project.myRole ?
+                      {item.details.myRole ?
                         <div className='col-6 col-sm-12'>
                           <div className='project__info-item'>
                             <span className='project__info-item-label'>My role</span>
-                            <div className='project__info-item-text'>{item.project.myRole}</div>
+                            <div className='project__info-item-text'>{item.details.myRole}</div>
                           </div>
                         </div>
                         :
                         null
                       }
-                      {item.project.madeBy ?
+                      {item.details.madeBy ?
                         <div className='col-6 col-sm-12'>
                           <div className='project__info-item'>
                             <span className='project__info-item-label'>Made by</span>
-                            <a href={item.project.madeByLink} className='project__info-item-text' target='_blank'>{item.project.madeBy}</a>
+                            <a href={item.details.madeByLink} className='project__info-item-text' target='_blank'>{item.details.madeBy}</a>
                           </div>
                         </div>
                         :
@@ -90,11 +90,11 @@ export default class Project extends Component {
                         :
                         null
                       }
-                      {item.project.timeline ?
+                      {item.details.timeline ?
                         <div className='col-6 col-sm-12'>
                           <div className='project__info-item'>
                             <span className='project__info-item-label'>Project timeline</span>
-                            <div className='project__info-item-text'>{item.project.timeline}</div>
+                            <div className='project__info-item-text'>{item.details.timeline}</div>
                           </div>
                         </div>
                         :
@@ -110,8 +110,8 @@ export default class Project extends Component {
       }
     })
 
-    const templateBottom = data.portfolio.map((item, index) => {
-      const imageUrl = item.project.imageUrl ? require('Assets/images/projects/' + item.project.imageUrl) : null
+    const templateBottom = portfolio.map((item, index) => {
+      const imageUrl = item.details.imageUrl ? require('Assets/images/projects/' + item.details.imageUrl) : null
 
       if(projectUrl === item.folderName) {
         return (
@@ -124,6 +124,17 @@ export default class Project extends Component {
       }
     })
 
+    const selectedItems = portfolio.map((item, index) => {
+
+        const relatedProjects = item.details.relatedProjects
+
+        return relatedProjects
+
+    });
+
+    console.log(selectedItems)
+
+
     return (
       <div className='main__inner project'>
         {templateTop}
@@ -131,7 +142,7 @@ export default class Project extends Component {
         <div className='container-fluid'>
           <div className='section section--alt'>
             <Heading subtitle='Thanks for watching' title='Check out my other projects' classExtra='heading--center' />
-            <PortfolioItemSelected data={data.portfolio} selected={[6,5,4,2]}/>
+            <PortfolioItemSelected data={portfolio} selected={[1,2,3]}/>
           </div>
         </div>
       </div>
