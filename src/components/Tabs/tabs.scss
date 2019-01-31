@@ -1,5 +1,5 @@
 .tabs {
-  @extend .d-flex, .flex-row, .flex-wrap, .align-items-center;
+  @extend .d-flex, .flex-row, .flex-wrap, .align-items-center, .justify-content-center;
   margin: 0 -5px 45px;
 
   &__item {

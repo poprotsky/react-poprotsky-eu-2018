@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
       <div className='main__inner'>
         <div className='container-fluid'>
           <div className='section section--alt'>
-            <Heading subtitle='Portfolio' title='Websites and Apps' />
+            <Heading subtitle='Portfolio' title='Websites and Apps' classExtra='heading--center' />
             <Tabs data={projectTypes} />
             <PortfolioItem data={portfolio}/>
           </div>

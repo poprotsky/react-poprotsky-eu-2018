@@ -25,7 +25,7 @@ export default class Home extends Component {
         <PortfolioItemElected id={1} />
 
         <div className='container-fluid'>
-          <div className='section section--homepage'>
+          <div className='section section--homepage padding-clear--bottom'>
             <PortfolioItemSelected data={portfolio} selected={[6,5,4,2]} />
           </div>
         </div>
