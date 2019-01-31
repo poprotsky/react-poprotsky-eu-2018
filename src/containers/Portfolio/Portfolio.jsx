@@ -12,6 +12,9 @@ export default class Portfolio extends Component {
   componentWillMount() {
     window.scrollTo(0,0)
   }
+  /*
+    .filter((item) => item.type === 1)
+  */
   render() {
     return (
       <div className='main__inner'>

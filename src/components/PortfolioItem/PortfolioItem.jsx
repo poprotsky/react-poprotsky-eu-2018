@@ -5,10 +5,6 @@ import projectTypes from 'Assets/projectTypes.json'
 import helpers from 'helpers/helpers'
 
 export default class PortfolioItem extends Component {
-  componentWillMount() {
-    // let el = document.querySelector('.portfolio-items');
-    // el.parentNode.removeChild(el);
-  }
 
   render() {
     const portfolio = [...this.props.data]

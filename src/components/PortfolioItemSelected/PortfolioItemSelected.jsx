@@ -17,20 +17,6 @@ export default class PortfolioItemSelected extends Component {
 
       const projectType = helpers.findById(projectTypes, item.type)
 
-/*
-const selectedProjects = [1, 2, 3];
-let portfolioItems = selectedProjects.reverse().map((projectId, index) => {
-  const item = helpers.findById(this.props.data, projectId);
-  const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
-
-  const number = 100;//this.props.number
-
-  const projectType = helpers.findById(projectTypes, item.type)
-
-  .filter((item) => item.type === 1)
-*/
-
-
       return (
         <div className='col-4 col-xl-6 col-md-12' key={index}>
           <Link to={item.href} className={'portfolio-item ' + item.folderName}>
