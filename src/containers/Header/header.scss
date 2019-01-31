@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding: 25px 50px;
   @include max-screen($lg-max) {
     padding: 25px 30px;

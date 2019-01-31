@@ -1,0 +1,118 @@
+.portfolio-item-elected {
+  background-color: $gray-bg;
+  overflow: hidden;
+  margin-top: -160px;
+  &__inner {
+    @extend .d-flex, .flex-row, .align-items-center, .justify-content-between;
+    padding: 210px 100px 0;
+    @include min-screen($xxxl-max + 1) {
+      padding: 210px 200px 0;
+    }
+    @include max-screen($xl-max) {
+      padding: 160px 40px 0;
+    }
+    @include max-screen($md-max + 1) {
+      padding: 160px 0 0;
+    }
+    @include max-screen($sm-max) {
+      flex-flow: column-reverse wrap !important;
+      justify-content: flex-start !important;
+      padding-bottom: 30px;
+    }
+  }
+  &__img {
+    @extend .d-flex, .flex-row, .flex-nowrap, .align-items-start;
+    position: relative;
+    flex: 0 0 auto;
+    z-index: 1;
+    border-radius: $default-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0px -10px 80px 10px rgba(118, 118, 119, 0.15);
+    overflow: hidden;
+    width: 35vw;
+    max-width: 600px;
+    transform: translateY(6px);
+    @include transition();
+    @include max-screen($xl-max) {
+      width: 40vw;
+    }
+    @include max-screen($sm-max) {
+      width: 100%;
+      transform: none;
+      margin-bottom: 30px;
+      border-radius: $default-radius !important;
+    }
+    @include hover() {
+      transform: translateY(15px);
+    }
+    &--without-box-shadow {
+      box-shadow: none;
+      transform: scale(1);;
+      border-radius: 0;
+      @include hover() {
+        transform: scale(1.02);
+      }
+    }
+  }
+  &__content {
+    @extend .d-flex, .flex-column, .align-items-start;
+    padding-right: 15vw;
+    @include max-screen($sm-max) {
+      width: 100%;
+      flex-flow: row nowrap !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 0;
+    }
+  }
+  &__head {
+    margin-bottom: 30px;
+    @include max-screen($sm-max) {
+      margin: 0;
+    }
+  }
+  &__subtitle {
+    display: block;
+    margin: 0;
+    color: $secondary-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    @include max-screen($xl-max) {
+      font-size: 16px;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    color: $primary-color;
+    font-size: $heading-1-size;
+    font-weight: 600;
+    line-height: 1;
+    @include max-screen($xxl-max) {
+      font-size: $heading-2-size;
+    }
+    @include max-screen($xl-max) {
+      font-size: $heading-3-size;
+    }
+    @include max-screen($md-max + 1) {
+      font-size: $heading-4-size;
+    }
+    @include max-screen($sm-max) {
+      font-size: $heading-5-size;
+    }
+  }
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $alt-text-color;
+    margin: 0;
+    @include max-screen($lg-max) {
+      display: none;
+    }
+  }
+}

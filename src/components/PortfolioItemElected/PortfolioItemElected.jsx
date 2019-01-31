@@ -9,6 +9,7 @@ export default class PortfolioItemElected extends Component {
 
   render() {
     const electedId = this.props.id
+
     const electedProject = helpers.findById(portfolio, electedId)
 
     const electedImg = require('Assets/images/projects/' + electedProject.folderName + '/thumbnail-large' + (electedProject.formatPng ? '.png' : '.jpg'))
@@ -17,10 +18,27 @@ export default class PortfolioItemElected extends Component {
 
     return (
       <div className='portfolio-item-elected'>
-        {electedProject.name}
-        {electedProjectType.title}
-        <Link to={electedProject.href} className='btn btn--alt btn--rounded btn--border'>View project</Link>
-        <img src={electedImg} />
+        <div className='container-fluid'>
+          <div className='portfolio-item-elected__inner'>
+            <div className='portfolio-item-elected__content'>
+              <div className='portfolio-item-elected__head'>
+                <div className='portfolio-item-elected__subtitle'>
+                  {electedProjectType.title}
+                </div>
+                <div className='portfolio-item-elected__title'>
+                  {electedProject.name}
+                </div>
+                <div className='portfolio-item-elected__description'>
+                  {electedProject.details.description}
+                </div>
+              </div>
+              <Link to={electedProject.href} className='btn btn--alt btn--rounded btn--border'>View project</Link>
+            </div>
+            <Link to={electedProject.href} className={'portfolio-item-elected__img' + (electedProject.formatPng ? ' portfolio-item-elected__img--without-box-shadow' : '')}>
+              <img src={electedImg} />
+            </Link>
+          </div>
+        </div>
       </div>
     )
   }

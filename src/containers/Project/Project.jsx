@@ -132,8 +132,6 @@ export default class Project extends Component {
 
     });
 
-    console.log(selectedItems)
-
 
     return (
       <div className='main__inner project'>

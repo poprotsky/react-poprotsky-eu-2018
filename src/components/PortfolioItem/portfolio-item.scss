@@ -90,6 +90,9 @@
     @include max-screen($lg-max) {
       margin-bottom: 5px;
     }
+    @include max-screen($xl-max) {
+      font-size: 16px;
+    }
   }
   &__title {
     margin: 0;
