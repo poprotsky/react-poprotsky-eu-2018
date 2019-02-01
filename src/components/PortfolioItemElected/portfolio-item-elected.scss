@@ -87,7 +87,6 @@
   }
   &__title {
     margin: 0;
-    margin-bottom: 15px;
     color: $primary-color;
     font-size: $heading-1-size;
     font-weight: 600;
@@ -111,7 +110,8 @@
     line-height: 1.4;
     color: $alt-text-color;
     margin: 0;
-    @include max-screen($lg-max) {
+    margin-top: 15px;
+    @include max-screen($xl-max) {
       display: none;
     }
   }

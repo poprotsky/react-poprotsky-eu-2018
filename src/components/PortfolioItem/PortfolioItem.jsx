@@ -7,7 +7,12 @@ import helpers from 'helpers/helpers'
 export default class PortfolioItem extends Component {
 
   render() {
-    const portfolio = [...this.props.data]
+    const portfolio = this.props.data.filter((item) => {
+      if (this.props.currentType !== 0) {
+        return item.type === this.props.currentType;
+      }
+      return true;
+    });
 
     let portfolioItems = portfolio.reverse().map((item, index) => {
       const thumbnailUrl = require('Assets/images/projects/' + item.folderName + '/thumbnail' + (item.formatPng ? '.png' : '.jpg'))
@@ -38,7 +43,7 @@ export default class PortfolioItem extends Component {
 
     return (
       <div className='portfolio-items'>
-        <div className='row large-gutters'>
+        <div className='row large-gutters justify-content-center'>
           {portfolioItems}
         </div>
       </div>
