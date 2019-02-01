@@ -1,6 +1,6 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "name": "Coram",
     "folderName": "coram",
     "type": 1,
@@ -14,11 +14,11 @@
       "madeByLink": "https://www.tenseapp.pl/",
       "timeline": "3 weeks",
       "imageUrl": "coram/main-img.jpg",
-      "relatedProjects": [2,4,5]
+      "relatedProjects": [2, 3, 5]
     }
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "Bionateo",
     "folderName": "bionateo",
     "type": 2,
@@ -32,11 +32,11 @@
       "madeByLink": "https://www.tenseapp.pl/",
       "timeline": "2 months",
       "imageUrl": "bionateo/main-img.jpg",
-      "relatedProjects": [3,2,4]
+      "relatedProjects": [1, 3, 5]
     }
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Randkuj.my",
     "folderName": "randkujmy",
     "type": 5,
@@ -50,11 +50,11 @@
       "madeByLink": "https://iguanastudio.pl/",
       "timeline": "7 months",
       "imageUrl": "randkujmy/main-img.jpg",
-      "relatedProjects": [3,2,4]
+      "relatedProjects": [1, 7, 2]
     }
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Course shelf",
     "folderName": "course-shelf",
     "type": 4,
@@ -70,11 +70,11 @@
       "madeByLink": "https://neducat.io/",
       "timeline": "3 weeks",
       "imageUrl": "course-shelf/main-img.jpg",
-      "relatedProjects": [3,2,4]
+      "relatedProjects": [7, 6, 5]
     }
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Digitizer",
     "folderName": "digitizer",
     "type": 6,
@@ -88,11 +88,11 @@
       "madeByLink": "https://neducat.io/",
       "timeline": "2 months",
       "imageUrl": "digitizer/main-img.jpg",
-      "relatedProjects": [3,2,4]
+      "relatedProjects": [6, 3, 1]
     }
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Sharemote",
     "folderName": "sharemote",
     "type": 3,
@@ -106,11 +106,11 @@
       "madeByLink": "https://neducat.io/",
       "timeline": "3 months",
       "imageUrl": "sharemote/main-img.jpg",
-      "relatedProjects": [3,2,4]
+      "relatedProjects": [5, 4, 7]
     }
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Seehome",
     "folderName": "seehome",
     "type": 4,
@@ -126,7 +126,7 @@
       "madeByLink": "https://www.behance.net/gallery/69777041/Freebie-Seehome-Real-estate-mobile-app",
       "timeline": "1 week",
       "imageUrl": "seehome/main-img.jpg",
-      "relatedProjects": [1, 0, 1]
+      "relatedProjects": [4, 3, 1]
     }
   }
 ]

@@ -22,11 +22,11 @@ export default class Home extends Component {
 
     return (
       <div className='main__inner home'>
-        <PortfolioItemElected id={1} />
+        <PortfolioItemElected id={2} />
 
         <div className='container-fluid'>
           <div className='section section--homepage padding-clear--bottom'>
-            <PortfolioItemSelected data={portfolio} selected={[6,5,4,2]} />
+            <PortfolioItemSelected data={portfolio} selected={[7,6,5,3]} />
           </div>
         </div>
         <div className='section dark-bg'>
