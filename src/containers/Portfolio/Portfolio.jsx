@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import portfolio from 'Assets/portfolio.json'
-import projectTypes from 'Assets/projectTypes.json'
+import portfolio from 'Data/portfolio.json'
+import projectTypes from 'Data/projectTypes.json'
 
 import Heading from '../../components/Heading/'
 import PortfolioItem from '../../components/PortfolioItem/'

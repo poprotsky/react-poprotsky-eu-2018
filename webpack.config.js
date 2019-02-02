@@ -15,7 +15,8 @@ const common = {
     extensions: ['.js', '.jsx'],
     modules: ['node_modules', path.join(__dirname, 'src')],
     alias: {
-      Assets: path.resolve(__dirname, 'src/assets')
+      Assets: path.resolve(__dirname, 'src/assets'),
+      Data: path.resolve(__dirname, 'src/data')
     }
   },
   optimization: {

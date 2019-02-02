@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import contactData from 'Assets/contact.json'
+import contactData from 'Data/contact.json'
 
 import Heading from '../../components/Heading/'
 import ContactData from '../../components/ContactData/'

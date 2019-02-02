@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import projectTypes from 'Assets/projectTypes.json'
+import projectTypes from 'Data/projectTypes.json'
 import helpers from 'helpers/helpers'
 
 export default class PortfolioItemSelected extends Component {

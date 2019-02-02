@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import renderHTML from 'react-render-html'
 
-import aboutData from 'Assets/about.json'
-import contactData from 'Assets/contact.json'
-import skillsData from 'Assets/skills.json'
-import numbersData from 'Assets/numbers.json'
+import aboutData from 'Data/about.json'
+import contactData from 'Data/contact.json'
+import skillsData from 'Data/skills.json'
+import numbersData from 'Data/numbers.json'
 
 import Heading from '../../components/Heading/'
 import Button from '../../components/Button/'

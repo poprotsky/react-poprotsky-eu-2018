@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import renderHTML from 'react-render-html'
 
-import portfolio from 'Assets/portfolio.json'
-import projectTypes from 'Assets/projectTypes.json'
+import portfolio from 'Data/portfolio.json'
+import projectTypes from 'Data/projectTypes.json'
 import helpers from 'helpers/helpers'
 
 import Heading from '../../components/Heading/'
@@ -109,7 +109,7 @@ export default class Project extends Component {
               </div>
             </div>
           </div>
-          
+
           <div className='project__inner-item'>
             <div className='project__inner-item-img'>
               <img src={imageUrl ? imageUrl : null} alt=""/>

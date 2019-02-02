@@ -5,8 +5,8 @@ import FaviconImg from 'Assets/images/favicon.png'
 
 import Routes from '../../routes'
 
-import mainData from 'Assets/main.json'
-import contactData from 'Assets/contact.json'
+import mainData from 'Data/main.json'
+import contactData from 'Data/contact.json'
 
 import Header from '../../containers/Header/'
 import Footer from '../../containers/Footer/'

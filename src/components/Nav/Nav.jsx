@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import Button from '../Button/'
 
-import contactData from 'Assets/contact.json'
+import contactData from 'Data/contact.json'
 
 export default class Nav extends Component {
   render() {
