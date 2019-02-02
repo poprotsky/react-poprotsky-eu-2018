@@ -5,6 +5,7 @@ import renderHTML from 'react-render-html'
 import data from 'Assets/data.json'
 import portfolio from 'Assets/portfolio.json'
 import projectTypes from 'Assets/projectTypes.json'
+import contactData from 'Assets/contact.json'
 
 import PortfolioItemElected from '../../components/PortfolioItemElected/'
 import PortfolioItemSelected from '../../components/PortfolioItemSelected/'
@@ -41,7 +42,7 @@ export default class Home extends Component {
         <div className='section'>
           <div className='container'>
             <div className='heading-simple'>Contact</div>
-            <ContactData data={data.contactData} />
+            <ContactData data={contactData.data} />
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import data from 'Assets/data.json'
+import contactData from 'Assets/contact.json'
 
 import Heading from '../../components/Heading/'
 import ContactData from '../../components/ContactData/'
@@ -11,7 +11,7 @@ export default class Contact extends Component {
     window.scrollTo(0,0)
   }
   render() {
-    const page = data.contactPage
+    const page = contactData.page
     const subtitle = page.subtitle
     const title = page.title
 
@@ -20,8 +20,8 @@ export default class Contact extends Component {
         <div className='container'>
           <div className='section section--alt'>
             <Heading subtitle={subtitle} title={title} />
-            <ContactData data={data.contactData} />
-            <Links data={data.social} />
+            <ContactData data={contactData.data} />
+            <Links data={contactData.social} />
           </div>
         </div>
       </div>

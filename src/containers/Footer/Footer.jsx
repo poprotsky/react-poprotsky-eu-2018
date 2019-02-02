@@ -6,7 +6,7 @@ import Social from '../../components/Social/'
 export default class Footer extends Component {
   render() {
     const websiteName = this.props.data.website.name
-    const social = this.props.data.social
+    const social = this.props.contactData.social
 
     return (
       <footer className='footer'>

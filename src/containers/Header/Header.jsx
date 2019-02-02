@@ -8,7 +8,7 @@ export default class Header extends Component {
   render() {
     const websiteName = this.props.data.website.name
     const nav = this.props.data.nav
-    const social = this.props.data.social
+    const social = this.props.contactData.social
 
     return (
       <header className='header'>

@@ -1,0 +1,34 @@
+{
+  "page": {
+    "subtitle": "Contact",
+    "title": "Say Hello & Let’s talk"
+  },
+  "data": {
+    "email": "eugene@poprotsky.eu",
+    "emailLabel": "*you can speak or write e-mail in english, polish, russian or ukrainian language",
+    "phone": "+48 730 877 807",
+    "phoneHref": "48730877807",
+    "addressFirst": "60-702 Poznan, Poland",
+    "addressSecond": "Glogowska street 31"
+  },
+  "social": [
+    {
+      "name": "behance",
+      "url": "https://www.behance.net/poprotsky_eu",
+      "icon": "i-behance",
+      "title": "Design portfolio"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/poprotsky",
+      "icon": "i-github",
+      "title": "Code repositories"
+    },
+    {
+      "name": "linkedIn",
+      "url": "https://www.linkedin.com/in/eugenepoprotsky/",
+      "icon": "i-linkedin",
+      "title": "Public profile"
+    }
+  ]
+}

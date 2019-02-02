@@ -6,6 +6,7 @@ import FaviconImg from 'Assets/images/favicon.png'
 import Routes from '../../routes'
 
 import data from 'Assets/data.json'
+import contactData from 'Assets/contact.json'
 
 import Header from '../../containers/Header/'
 import Footer from '../../containers/Footer/'
@@ -32,7 +33,7 @@ export default class App extends Component {
       }
     })
   }
-  
+
   navOpen = () => {
     document.querySelector('.app').classList.toggle('nav-is-open')
   }
@@ -62,11 +63,11 @@ export default class App extends Component {
     return (
       <div className='app' onClick={this.navOverlayClose}>
         <Favicon url={FaviconImg} />
-        <Header data={data} onClickFn={this.navOpen}/>
+        <Header data={data} contactData={contactData} onClickFn={this.navOpen}/>
         <main className='main'>
           <Routes />
         </main>
-        <Footer data={data} />
+        <Footer data={data} contactData={contactData} />
         <div className='back-to-top' onClick={this.backToTop}>
           <i className='i i-arrow-top'></i>
         </div>

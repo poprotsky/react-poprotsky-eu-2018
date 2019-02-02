@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 
 import Button from '../Button/'
 
+import contactData from 'Assets/contact.json'
+
 export default class Nav extends Component {
   render() {
     const activeClass = 'is-active'
@@ -19,7 +21,7 @@ export default class Nav extends Component {
       <ul className='nav'>
          {navItems}
          <li className='nav__item'>
-           <Button href='mailto:eugene@poprotsky.eu' classExtra='btn--alt btn--rounded btn--black'>Let's talk</Button>
+           <Button href={'mailto:' + contactData.data.email} classExtra='btn--alt btn--rounded btn--black'>Let's talk</Button>
          </li>
       </ul>
     )

@@ -1,11 +1,11 @@
 .btn {
-  display: inline-flex;
-  align-items: center;
+  @extend .d-inline-flex, .align-items-center, .justify-content-center;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: .5px;
   text-transform: uppercase;
+  text-align: center;
   color: $primary-color;
   padding: 16px 18px;
   border: 2px solid transparent;
@@ -14,10 +14,9 @@
   box-shadow: 0px 10px 30px 5px #ebeef7;
   line-height: 1;
   @include transition();
-  @include hover() {
+  &:hover {
     box-shadow: 0px 10px 30px 5px darken(#ebeef7, 5%);
   }
-
   span {
     font-size: 13px;
     font-weight: 600;
@@ -32,6 +31,10 @@
   &--black {
     background-color: #000;
     color: #fff;
+    &:hover {
+      box-shadow: none;
+      background-color: $secondary-color;
+    }
   }
   &--alt {
     padding: 14px 18px;
@@ -50,10 +53,6 @@
     @include max-screen($md-max) {
       font-size: 15px;
       padding: 10px 14px;
-    }
-    &:hover {
-      box-shadow: none;
-      background-color: $secondary-color;
     }
   }
   &--rounded {
