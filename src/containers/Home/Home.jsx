@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import renderHTML from 'react-render-html'
 
-import data from 'Assets/data.json'
 import portfolio from 'Assets/portfolio.json'
 import projectTypes from 'Assets/projectTypes.json'
+import aboutData from 'Assets/about.json'
 import contactData from 'Assets/contact.json'
 
 import PortfolioItemElected from '../../components/PortfolioItemElected/'
@@ -19,7 +19,6 @@ export default class Home extends Component {
   }
 
   render() {
-    const aboutShortData = renderHTML(data.aboutShortData)
 
     return (
       <div className='main__inner home'>
@@ -32,8 +31,9 @@ export default class Home extends Component {
         </div>
         <div className='section dark-bg'>
           <div className='container'>
-            <div className='heading-simple'>About</div>
-            {aboutShortData}
+            <div className='heading-simple'>{aboutData.page.subtitle}</div>
+            <h1>{aboutData.details.title}</h1>
+            <p className='lead'>{aboutData.details.lead}</p>
             <div className='btn-group'>
               <Link to='/about' className='btn-text'>View more</Link>
             </div>
@@ -41,7 +41,7 @@ export default class Home extends Component {
         </div>
         <div className='section'>
           <div className='container'>
-            <div className='heading-simple'>Contact</div>
+            <div className='heading-simple'>{contactData.page.subtitle}</div>
             <ContactData data={contactData.data} />
           </div>
         </div>

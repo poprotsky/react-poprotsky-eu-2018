@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import renderHTML from 'react-render-html'
 
-import data from 'Assets/data.json'
+import aboutData from 'Assets/about.json'
 import contactData from 'Assets/contact.json'
+import skillsData from 'Assets/skills.json'
+import numbersData from 'Assets/numbers.json'
 
 import Heading from '../../components/Heading/'
 import Button from '../../components/Button/'
@@ -14,27 +16,30 @@ export default class About extends Component {
     window.scrollTo(0,0)
   }
   render() {
-    const page = data.aboutPage
+    const page = aboutData.page
     const subtitle = page.subtitle
     const title = page.title
-    const textContent = renderHTML(page.textContent)
+
+    const descriptionLead = aboutData.details.lead
+    const description = renderHTML(aboutData.details.description)
 
     return (
       <div className='main__inner gray-bg'>
         <div className='container'>
           <div className='section section--alt'>
             <Heading subtitle={subtitle} title={title} />
-            {textContent}
+            <p className='lead'>{descriptionLead}</p>
+            {description}
             <div className='btn-group'>
               <Button href={'mailto:' + contactData.data.email} classExtra=' btn--black'>Let's talk</Button>
               <Button href='http://poprotsky.eu/cv_2018_eugene_poprotsky.pdf' target='_blank'>Download CV <span>(december 2018)</span></Button>
             </div>
           </div>
         </div>
-        <Skills data={data.skills} />
+        <Skills data={skillsData} />
         <div className='container-fluid'>
           <div className='section'>
-            <Numbers data={data.numbers} />
+            <Numbers data={numbersData} />
           </div>
         </div>
       </div>
