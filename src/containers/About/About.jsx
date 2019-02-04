@@ -12,9 +12,6 @@ import Skills from '../../components/Skills/'
 import Numbers from '../../components/Numbers/'
 
 export default class About extends Component {
-  componentWillMount() {
-    window.scrollTo(0,0)
-  }
   render() {
     const page = aboutData.page
     const subtitle = page.subtitle

@@ -7,9 +7,6 @@ import ContactData from '../../components/ContactData/'
 import Links from '../../components/Links/'
 
 export default class Contact extends Component {
-  componentWillMount() {
-    window.scrollTo(0,0)
-  }
   render() {
     const page = contactData.page
     const subtitle = page.subtitle

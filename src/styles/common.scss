@@ -128,7 +128,9 @@
   margin-right: -10px;
   @include max-screen($sm-max) {
     flex-flow: column nowrap;
-     
+  }
+  &--center {
+    @extend .justify-content-center;
   }
   .btn {
     margin: 10px;

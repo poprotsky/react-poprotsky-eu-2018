@@ -10,16 +10,6 @@ import Heading from '../../components/Heading/'
 import PortfolioItemSelected from '../../components/PortfolioItemSelected/'
 
 export default class Project extends Component {
-  componentWillMount() {
-    window.scrollTo(0,0)
-  }
-
-  componentDidUpdate(prevProps) {
-    let projectUrl = this.props.match.params.project
-    if (prevProps.projectUrl !== projectUrl) {
-      window.scrollTo(0,0)
-    }
-  }
 
   render() {
     const projectUrl = this.props.match.params.project

@@ -14,10 +14,6 @@ import ContactData from '../../components/ContactData/'
 import helpers from 'helpers/helpers'
 
 export default class Home extends Component {
-  componentWillMount() {
-    window.scrollTo(0,0)
-  }
-
   render() {
 
     return (
