@@ -18,10 +18,16 @@ export default class Routes extends Component {
     }
   }
 
+  componentWillUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      // console.log('Route will change')
+    }
+  }
+
   onRouteChanged() {
     window.scrollTo(0,0)
 
-    console.log("ROUTE CHANGED")
+    // console.log("ROUTE CHANGED")
   }
 
   render() {
